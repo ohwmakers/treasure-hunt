@@ -9,282 +9,580 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play base.</tw-noscript></noscript></tw-story>
-<tw-storydata name="base" startnode="1" creator="Twine" creator-version="2.3.13" ifid="F93A93CE-A599-4F6B-BB6F-02A0F21E8457" zoom="0.6" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="BoM" color="green"></tw-tag>,<tw-tag name="Dead-end" color="yellow"></tw-tag>,<tw-tag name="Modularity" color="green"></tw-tag>,<tw-tag name="assembly-instructions" color="green"></tw-tag>,<tw-tag name="reinventing-wheel" color="green"></tw-tag>,<tw-tag name="word-soup" color="purple"></tw-tag><tw-passagedata pid="1" name="Start" tags="" position="87,290" size="100,100">The light of the two suns hits you directly in the eyes, as you wake up wondering why the alarm clock didn&#39;t ring. 
+<tw-storydata name="base" startnode="1" creator="Twine" creator-version="2.3.13" ifid="F93A93CE-A599-4F6B-BB6F-02A0F21E8457" zoom="0.6" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Electrolize');
 
-//- It&#39;s late already...//
+a {
+  color: hotpink;
+}
 
-It&#39;s the year (text-style:&quot;mark&quot;)[2071], and in the LDV planet, far away in the &lt;a href=&quot;https://en.wikipedia.org/wiki/Albireo&quot;&gt;β Cygni system&lt;/a&gt;, colonists get up and start working way before sunrise(s). 
+tw-story[tags~="stars"] {
+ background-image:url("https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/nasa.jpg");
+ background-size:cover;
+}
 
-You get out of your bubble bed (text-style:&quot;expand&quot;)[slowly]. 
+tw-story[tags~="basecamp"] {
+ background-image:url("https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/dome.jpeg");
+ background-size:cover;
+}
 
-Taking part in this mission to terraform LDV seemed like a great idea in the beginning, but work has become quite repetitive. 
+tw-story[tags~="message"] {
+ background-image:url("https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/msg.jpg");
+ background-size:cover;
+}
 
-You are starting to regret it. And the two suns make it difficult for the body to adapt...
+tw-story[tags~="radio"] {
+ background-image:url("https://github.com/ohwmakers/treasure-hunt/raw/main/assets/radiobg.jpg");
+ background-size:cover;
+}
 
-//- &quot;I need [[something]] to wake me up&quot;// </tw-passagedata><tw-passagedata pid="2" name="make your way" tags="" position="311,290" size="100,100">The main tent looks like a disturbed ant hill. People are making gestures, walking around trying to understand what is going on.
+tw-story[tags~="Dead-end"] {
+ background-image:url("https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/deadend.jpg");
+ background-size:cover;
+}
 
-You find (text-style:&quot;mark&quot;)[Amos], the mechanical engineer of the camp, in charge of maintenance. There is usually nothing going on at camp that can escape Amos&#39; gaze.
+tw-story[tags~="surface"] {
+ background-image:url("https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/mars.jpg");
+ background-size:cover;
+}
 
-//- &quot;Hey Amos... What&#39;s going on here?&quot;// you ask.
 
-&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/c/ce/Rohrpoststation.jpg&quot; align=&quot;right&quot;&gt;
 
-//- &quot;Fixing the mail, something is stuck in there. Most artifacts in the camp are dead, and no one knows why//&quot; he replies.
 
-You take a look at the camp&#39;s main mailing system. It has always fascinated you. The mechanism is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Pneumatic_tube&quot;&gt;relic from the early 20th century&lt;/a&gt;, and it still works. Just compressed air, and physics. 
 
-A dry noise distracts you from your dreams. And then another, and a final one. 
+tw-passage {
+    font-family: electrolize;
+}
 
-[[//- It&#39;s fixed//-&gt;Look, there]], says Amos.</tw-passagedata><tw-passagedata pid="3" name="read message 1" tags="Dead-end" position="535,471" size="100,100">You open the tube, and unroll the message inside.
 
-(font: &quot;monospace&quot;)[(text-colour:cyan)[Dear colonists,
+img {
+  padding: 25px;
+} </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="BoM" color="green"></tw-tag>,<tw-tag name="Dead-end" color="yellow"></tw-tag>,<tw-tag name="Modularity" color="green"></tw-tag>,<tw-tag name="assembly-instructions" color="green"></tw-tag>,<tw-tag name="fails" color="red"></tw-tag>,<tw-tag name="reinventing-wheel" color="green"></tw-tag>,<tw-tag name="word-soup" color="purple"></tw-tag><tw-passagedata pid="1" name="Start" tags="stars" position="45,78" size="100,100">(if: visits is 1)[
+(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+
+The light of the two suns hits you directly in the eyes.
+
+You wake up wondering why the alarm clock didn&#39;t ring. 
+
+(text-colour:#e5dbff)[//&quot;It&#39;s [[late]] already...&quot;//]
+
+</tw-passagedata><tw-passagedata pid="2" name="make your way" tags="basecamp" position="311,290" size="100,100">(enchant: ?first&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;)+(background:black))
+
+|first&gt;[The main tent looks like a disturbed ant hill.
+
+You manage to find //&#39;&#39;Amos&#39;&#39;//, chief mechanical engineer.
+
+In the year 2117 Amos&#39; work is easier: all equipment is] (live: 7s)[(stop:)|ohw&gt;[open source hardware.]]
+
+(click-append: ?ohw)[(text-colour: #d8f5a2)[&lt;br&gt;This means anyone at camp can access the designs of any machine in use.
+
+It is much easier and faster to build, fix or customize equipment. 
+
+&#39;&#39;Isn&#39;t that great!?&#39;&#39; Can you imagine how it was in the 21st century, with all those patents and restrictions?!]]
+
+(live: 8s)[(stop:)|second&gt;[(bg:black)[Of course you still need skilled people to make everything work.]
+
+(bg:black)[//- &quot;Hey Amos... What&#39;s going on here?&quot;// [[you ask]].
+]]]
+
+&lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/chatternoise.mp3&quot; autoplay&gt;
+</tw-passagedata><tw-passagedata pid="3" name="read message 1" tags="message" position="467.66666666666663,491" size="100,100">(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))
+
+&lt;br&gt;
+(text-colour: black)[You open the tube, and unroll the message inside.]
+&lt;br&gt;
+
+(text-colour: #a61e4d)[Dear colonists,
 
 Once again we kindly ask you to clean your mugs and put them in the cupboard after using. 
 
 You may eat in a bubble, but someone still has to clean it.
 
 Yours,
-Cleaning team.]]
+Cleaning team.]
+&lt;br&gt;
+(text-colour: black)[You feel guilty, and promise you will pay more attention to cleaning next time. 
 
-You feel guilty, and promise you will pay more attention to cleaning next time. 
+After all, you grew fond of the tiny cleaning robots, they are cute.]
 
-After all, you grew fond of the tiny cleaning robots, they are cute.
+[[Go back-&gt;Look, there]]</tw-passagedata><tw-passagedata pid="4" name="read message 2" tags="message" position="618.3333333333334,518.6666666666667" size="100,100">(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))
 
-[[Go back-&gt;Look, there]]</tw-passagedata><tw-passagedata pid="4" name="read message 2" tags="Dead-end" position="584,322" size="100,100">You open the tube, and unroll the message inside.
 
-(font: &quot;monospace&quot;)+(text-colour:cyan)[Dear colonists,
+(text-colour: black)[You open the tube, and unroll the message inside.]
+&lt;br&gt;
 
-The Lost &amp; Found service has received a strange request today. Someone in the camp found a cat in the greenhouse and brought it to us.
+(text-colour:#a61e4d)[Dear colonists,
 
-We have no idea how this cat arrived to LDV, as it is illegal to import animals into the planet.
+Someone in the greenhouse found a cat and brought it to us today.
+
+We kindly remind you that is illegal to import animals into the planet.
 
 However, we love orange tabbies, so we plan to keep it. You can try to convince us to give it back by coming to the Service tent before lunch.
 
 Thank you,
-Lost &amp; Found.]
+Lost &amp; Found service.]
 
-//&quot;Oh come on everyone in the camp knows that the orange tabby is Amos&#39; pet&quot;,//  you think to yourself. 
+&lt;br&gt;
+(text-colour: black)[//&quot;Oh come on everyone in the camp knows that the orange tabby is Amos&#39; pet&quot;,//  you think to yourself. 
 
-//&quot;Good luck trying to keep that cat inside a tent&quot;.//
+//&quot;Good luck trying to keep that cat inside a tent&quot;.//]
 
-[[Go back-&gt;Look, there]]</tw-passagedata><tw-passagedata pid="5" name="read message 3" tags="" position="564,172" size="100,100">You open the red case, and unroll the message inside.
+[[Go back-&gt;Look, there]]</tw-passagedata><tw-passagedata pid="5" name="read message 3" tags="message" position="650,272" size="100,100">(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))
 
-(font: &quot;monospace&quot;)+(text-colour:orange)[&#39;&#39;THIS IS A WARNING MESSAGE.&#39;&#39;
+(text-colour:black)[You open the red case, and unroll the message inside.]
+&lt;br&gt;
+
+(text-colour:#a61e4d)[&#39;&#39;THIS IS A WARNING MESSAGE.&#39;&#39;
 
 LDV colony will be hit by a solar flare in the next 12 hours. 
 
-This flare is coming from the one sun that we have less information about, so the science team can not fully anticipate the consequences.
+This flare is coming from the one sun that we have less information about, so the science team can not fully anticipate the consequences. Please switch off your electronics.
 
 I foresee that, as usual, no one in this camp will listen to the scientist in chief (me). 
-
-Make yourself a favor, and (text-style:&quot;mark&quot;)+(text-colour:black)[SWITCH OFF YOUR ELECTRONICS NOW].
 
 Love,
 Dr. Cooper
 
-PS:TURN OFF YOUR ELECTRONICS
+PS: TURN OFF YOUR ELECTRONICS
 ]
 
-(link:&quot;\&quot;Oops\&quot;&quot;)[You take a look at Amos, and pass him the message.
+[[&quot;Oops&quot;]]</tw-passagedata><tw-passagedata pid="6" name="base camp" tags="basecamp" position="890,287.6666666666667" size="100,100">(enchant: ?one&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;)+(background:black))
 
-//- &quot;Hey, I think we missed an important warning&quot;//
+|one&gt;[All the eyes in the camp are on Amos.
 
-//- &quot;Well, this explains it all, let&#39;s gather everyone at the [[base camp]]&quot;//]. 
+//&quot;Last night we received a warning from the science team at the outer post, about a solar flare&quot;//, he starts.
 
-</tw-passagedata><tw-passagedata pid="6" name="base camp" tags="" position="765,308" size="100,100">//&quot;Last night we received a warning from the science team at the outer post, about a solar flare. Unfortunately we didn&#39;t care, and now most of our hardware is gone for good.&quot;// says Amos.
+//&quot;Unfortunately we didn&#39;t care, and now most of our hardware is gone for good&quot;//.
 
-No surprises here, almost no one pays attention to the science team in the outer post.
+Worried looks appear beneath the colonists&#39; helmets.]
 
-|next&gt;[(text-colour: orange)[Some colonists try to convince the rest of what to do next]].
+
+(live: 12s)[(stop:)|next&gt;[(text-colour: orange)[&quot;We need a plan&quot;, someone shouts from the back.]]
+
 (mouseover-append: ?next)[
 
-(link: &quot;Alix, the camp&#39;s senior developer&quot;)[
-(text-colour:#c0eb75)[//(text-colour:black)+(background:#c0eb75)[Alix]: &quot;We need to restore communications ASAP!&quot;//]]
+|alix&gt;[(text-colour:black)+(background:#c0eb75)[Alix, the camp&#39;s senior developer]] 
+(click-append: ?alix)[
+(text-colour:#c0eb75)[//&quot;We need to restore communications ASAP!&quot;//]]
 
-(link: &quot;Ixta, in charge of the greenhouse&quot;)[
-(text-colour:#d0bfff)[//(text-colour:black)+(background:#d0bfff)[Ixta]: &quot;Comms can wait, what we really need now is to ensure water supply&quot;//]]
+|ixta&gt;[(text-colour:black)+(background:#d0bfff)[Ixta, in charge of the greenhouse]]
+(click-append: ?ixta)[
+(text-colour:#d0bfff)[//&quot;Comms can wait, what we really need now is to ensure water supply&quot;//]]
 
-(link: &quot;Kev, head of the brewing lab&quot;)[
-(text-colour:#fcc2d7)[//(text-colour:black)+(background:#fcc2d7)[Kev]: &quot;People, those UV rays will fry us if we don&#39;t quickly replenish our suits! The fermentation controls at the lab are dead and the petri dishes are starting to dry out&quot;//]]]
+|kev&gt;[(text-colour:black)+(background:#fcc2d7)[Kev, head of the brewing lab]]
+(click-append: ?kev)[
+(text-colour:#fcc2d7)[//&quot;Those UV rays will fry us if we don&#39;t quickly replenish our suits! The fermentation controls at the lab are dead and the petri dishes are starting to dry out&quot;//]]
 
-|next2&gt;[(text-colour: orange)[Amos claps his hands.]]
+In silence, Amos evaluates the [[options]].
+]]
 
-(mouseover-append: ?next2)[
-//&quot;All these artifacts are vital, we do need to get them operative right now&quot;// he says. 
+</tw-passagedata><tw-passagedata pid="7" name="radio" tags="reinventing-wheel radio" position="1014,440" size="100,100">(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;)+(background:black))
 
-//&quot;Let&#39;s divide the work among ourselves&quot;//.]
+The solar flare had no mercy with the camp&#39;s main radio station. Circuits are fried, and a horrible smell floats around the comms camp.
 
-|next3&gt;[(text-colour: orange)[We&#39;ll start with you]]
+Alix is excited. She took a course on //(text-colour:#dbe4ff)[“Blockchain and the future of communications”]//, and is willing to use this opportunity to overhaul comms at the camp.
 
-(mouseover-append: ?next3)[
-//&quot;What are you going to repare?&quot;//
+//&quot;We can make the radio so much more efficient this way! Follow me&quot;//.
+
+She looks truly determined.
+
+[[Follow her]] 
+
+[[You take a minute]] 
+</tw-passagedata><tw-passagedata pid="8" name="wind mill" tags="" position="1227,278.3333333333333" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="9" name="kombucha" tags="" position="1083,152.33333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="10" name="take a look" tags="message" position="2289,439" size="100,100">(enchant: ?type&#39;s chars, via  (t8n-delay:pos * 20) + (t8n:&#39;instant&#39;))
+
+|type&gt;[
+(text-colour:black)[The sticky material has some words printed on it... In fact, it is a note!]
+&lt;br&gt;
+
+(text-colour:#a61e4d)[majQa&#39;, SuvwI&#39;!
+
+ghe&#39;naQ luchenmoHmeH yaghmey &#39;eb luchenmoHlaH &#39;ej, jIHvaD DablaHbe&#39; &#39;e&#39; vIHon.]
+&lt;br&gt;
+
+(text-colour:black)[
+//&quot;Now that comms are back, I should be able to find out quickly which language is this&quot;//, you guess.
+]
+
+[[Language of warriors-&gt;keyword]]
+[[Language of whales-&gt;nop]]
+[[Language of wizards-&gt;nop2]]
+
+
+|worf&gt;[Need a hint?]
+(click-replace: ?worf)[&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/worf.jpg&quot;&gt;]]
+
+</tw-passagedata><tw-passagedata pid="11" name="keyword" tags="message" position="2430,442" size="100,100">(enchant: ?passage&#39;s chars, via  (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;) + (text-colour:#a61e4d))
+
+## We salute you, stranger!
+
+We are the people that inhabited this planet before you. 
+
+We breath and feed  on methane, and in a couple of centuries we consumed it all (you should thank us for that).
+
+So we had to emigrate.
+
+Our electronics were constantly affected by the solar flares here, but we found a solution. Embed this document in acid to reveal the blueprints of it.
+
+You have to promise that you will share the lesson, as we also received it from another traveller.
+
+[[Go share with everyone!-&gt;Get your prize!]]</tw-passagedata><tw-passagedata pid="12" name="Follow her" tags="radio" position="1074,603" size="100,100">(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;)+(background:black))
+
+Alix grabs a board and starts describing how blockchain can make radio even more amazing at the camp.
+
+You recognize she has a point, it looks like a promising system.
+
+But soon you start getting lost in the jargon...
+
+You are starting to regret joining her, when you find a [[paper-&gt;puzzle]] in the floor.
+</tw-passagedata><tw-passagedata pid="13" name="You take a minute" tags="radio" position="1165,438" size="100,100">(enchant: ?sectiona&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;)+(background:black))
+
+|sectiona&gt;[You take a minute to think, while Alix is still at the board drawing.
+
+If all the tools used in the terraforming colonies are open source... 
+
+&#39;&#39;The instructions for building the radio must be somewhere!&#39;&#39;
+
+## GENIUS.
+
+//“Hey Alix, can we look for the documentation?&quot;//, you ask. She rolls her eyes but agrees to help.
+
+She shows you: //&quot;Do you mean this one with the big label... //](live:15s)[(stop:)|radiodoc&gt;[
+(text-colour:#343a40)+(background:#d8f5a2)[[RADIO INSTRUCTIONS-&gt;Open the radio docs]]]?]
+
+
+
+
+</tw-passagedata><tw-passagedata pid="14" name="puzzle" tags="fails radio" position="1082,730" size="100,100">(enchant: ?section1&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;)+(background:black))
+
+|section1&gt;[//&quot;Weird&quot;//, you think to yourself while Alix keeps talking... //&quot;We don&#39;t produce paper at LDV&quot;//.]
+
+(live: 5s)[(stop:)|msg1&gt;[You unroll the paper]]
+
+(click-replace: ?msg1)[
+It has orange cat hair all over it. 
+
+&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/msg.png&quot;&gt;
+
+(background: black)[//&quot;A secret code...&quot;//, you observe.]
+
+|msg2&gt;[(background: black)[//&quot;But I will need some hint!&quot;//]] 
+
+(click-replace: ?msg2)[
+
+&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/msg-instructions.png&quot;&gt;
+
+(background: black)[//&quot;Now we are talking&quot;//]
+
+(background: black)[You grab a pen and paper, and decipher the message.]
+
+(background: black)[Take note of it! You will need it [[later-&gt;&quot;NOTHING?!&quot;]]]
+]]</tw-passagedata><tw-passagedata pid="15" name="Open the radio docs" tags="assembly-instructions radio" position="1278,435" size="100,100">(enchant: ?read&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))
+
+|read&gt;[(background:black)[You start reading the docs.]
+&lt;br&gt;
+(font: &quot;monospace&quot;)+(background: #c5f6fa)+(text-colour:black)[&quot;All equipment for radio communication in the colonies is based on a pioneer model designed by Earth&#39;s 20th century maker, &lt;a href=&quot;https://en.wikipedia.org/wiki/Hanso_Idzerda&quot;&gt;Hans Idzerda&lt;/a&gt;&quot;.&lt;br&gt;]
+
+(background:black)[//&quot;Interesting...&quot;//]
+
+(background:black)[There is also a [schematic] of the radio...]
+
+(click: &quot;schematic&quot;)[&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/radio-sch.png&quot;&gt;]
+
+(background:black)[...and even some assembly instructions with a list of materials!]
+
+(click: &quot;assembly instructions&quot;)[&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/radio-instructions.png&quot;&gt;]]
+
+(live: 14s)[(stop:)|action&gt;[(background:#212529)[Alix is already grabbing a screwdriver and opening the radio.]]
+
+(background:black)[&#39;&#39;//“Where do we start?”//, she asks you.&#39;&#39;]
+
+(background:black)[[[Let&#39;s take look at the instructions-&gt;instructions]]]
+
+(background:black)[[[Boring!... Let&#39;s open it.-&gt;Boring!]]]
+]</tw-passagedata><tw-passagedata pid="16" name="instructions" tags="radio" position="1397,426" size="100,100">(enchant: ?sectiond&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;) + (bg:black))
+
+(text-colour:#212529)+(background:#c5f6fa)[&quot;This radio is designed in a modular way. Its components can be mixed and matched, as they are able to connect and interact through our new standardized interface.&quot;]
+
+|sectiond&gt;[You read to Alix.
+
+//&quot;How cool is that?! It&#39;s like assembling a game...&quot;// says Alix.
+
+//&quot;Really useful&quot;//, you think.
+
+##[[&quot;Hey, wait...&quot;.-&gt;Hey, wait.]]
+]
+</tw-passagedata><tw-passagedata pid="17" name="Boring!" tags="radio" position="1283,595" size="100,100">(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;)+(bg:black))
+
+//&quot;There&#39;s a loose red wire here that goes nowhere&quot;// says Alix
+
+&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/openradio.jpg&quot; width=&quot;40%&quot; align=&quot;center&quot;&gt;
+
+//&quot;Let&#39;s connect it to that red socket, red must go with red&quot;// you suggest.
+
+[[You connect the wire]]</tw-passagedata><tw-passagedata pid="18" name="Find out the missing component" tags="message" position="1519,433" size="100,100">(enchant: ?passage&#39;s chars, via  (t8n-delay:pos * 20) + (t8n:&#39;instant&#39;))
+
+(text-colour:black)[You find a post-it sticking out of the docs. It reads:]
+(text-colour:#a61e4d)[
+---
+.... .-. .-. / .- .-. . / -.. .. ..-. ..-. .. -.-. ..- .-.. - / - --- / ..-. .. -. -.. / -.-. --- -- .--. --- -. . -. - ... / - .... .- - / . ...- .- .--. --- .-. .- - . / .-- .. - .... / ... --- .-.. .- .-. / ..-. .-.. .- .-. . ... .-.-.- / .-- . / ..- ... . -.. / - .... . -- / .... . .-. . / -... . -.-. .- ..- ... . / .-- . / .-.. .. -.- . / - .... . .. .-. / .--. ..- .-. .--. .-.. . / -.-. --- .-.. --- ..- .-. .-.-.- / .. ..-. / -.-- --- ..- / -. . . -.. / - --- / .-. . .--. .-.. .- -.-. . / - .... . -- --..-- / - .- -.- . / .- / .-.. --- --- -.- / .- - / - .... . / -... .. .-.. .-.. / --- ..-. / -- .- - . .-. .. .- .-.. ... / ..-. --- .-. / .- .-.. - . .-. -. .- - .. ...- . ...
+--- ]
+
+(text-colour:black)[//&quot;What does that mean!?&quot;// Alix wonders. //&quot;Looks like an encoded message...&quot;//
+
+It reminds you of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Telegraphy#Terminology&quot; target=&quot;_blank&quot;&gt;notes&lt;/a&gt; from your great great great grandma notebook. She was a &lt;a href=&quot;http://www.arrl.org/what-is-ham-radio&quot; target=&quot;_blank&quot;&gt;ham radio&lt;/a&gt; lover. You start working on it...
+
+//&quot;Now that you [[&#39;&#39;solved&#39;&#39;-&gt;Yay! we found it]] it, write it down for later!&quot;, says Alix.//]
+</tw-passagedata><tw-passagedata pid="19" name="Yay! we found it" tags="BoM radio" position="1640,428" size="100,100">(enchant: ?sectionf&#39;s chars, via  (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;) + (bg:black))
+
+(font: &quot;monospace&quot;)+(background: #c5f6fa)+(text-colour:black)[&quot;This radio needs 4 HRR components to work&quot;]|sectionf&gt;[, you read.
+
+//&quot;...All fried by the flare&quot;//, she sighs.
+
+//&quot;But it&#39;s like following a recipe... The bill of materials has all the ingredients, their cost and possible replacements&quot;// you point out.
+
+//&quot;There is a [[footnote]] here...&quot;//, says Alix.]
+
+&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/bom.png&quot; aligh=&quot;right&quot;&gt;</tw-passagedata><tw-passagedata pid="20" name="footnote" tags="Modularity message" position="1768,434" size="100,100">(enchant: ?passage&#39;s chars, via  (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))
+
+(text-colour: #1c7ed6)[&quot;An accessible replacement for HRR components can be found in (text-style:&quot;double-strike&quot;)[solve the riddle first]&quot;]
+
+(text-colour:black)[
+
+//&quot;Come on! Is this a joke? They wrote riddles all across the docs!?&quot;// Alix was exasperated.
+
+//&quot;It seems so...&quot;//]
+&lt;br&gt;
+
+(text-colour: #1c7ed6)[&quot;We are very sorry for the inconvenience but adding riddles to the documentation is the only way we found for people to actually read it&quot;. 
+
+&quot;Also, life at camp can become pretty boring&quot;]
+&lt;br&gt;
+(text-colour:black)[//&quot;Well... They are not wrong&quot;//, Alix admits.]
+
+[[Solve the riddle]]
+</tw-passagedata><tw-passagedata pid="21" name="Replace components" tags="radio" position="1887,439" size="100,100">(enchant: ?anothersection&#39;s chars, via  (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;) + (bg:black))
+
+(font: &quot;monospace&quot;)+(background: #c5f6fa)+(text-colour:black)[&quot;An accessible replacement for HRR components can be found in any camp kitchen, just use dry blueberries&quot;]
+
+(font: &quot;monospace&quot;)+(background: #c5f6fa)+(text-colour:black)[&quot;Make sure you replace them every 3 Earth months to avoid bad smell&quot;]
+
+|anothersection&gt;[
+// &quot;Hey... are you sure this is gonna work?&quot;//, you ask Alix.
+
+//&quot;I honestly can&#39;t believe the replacement they suggest&quot;//, she says.
+
+//&quot;Same&quot;//, you say.
+
+|play&gt;[//&quot;There is only one way to know&quot;//]]
+
+(click-replace: ?play)[
+
+# Wooohooo! Radio is working!
+
+[[Run to camp]] with the good news!
+
+&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/transmission.wav&quot; autoplay&gt;
+
+]
+
+</tw-passagedata><tw-passagedata pid="22" name="Run to camp" tags="basecamp" position="2023,439" size="100,100">(enchant: ?passage&#39;s chars, via  (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;) + (bg:black))
+
+All main services are back! Everyone cheers you at the base camp.
+
+//&quot;We have reconstructed all the basic artifacts we needed in less than a day!&quot;// says Amos. 
+
+//&quot;Can you imagine doing this back in the 21st century!? We wouldn&#39;t have made it at all&quot;// says another camper.
+
+Everyone nods. Some colonists start laughing, relieved.
+
+### What a day. 
+
+You decide to go back to your tent and [[take a nap]], before the two suns rise again.</tw-passagedata><tw-passagedata pid="23" name="take a nap" tags="surface" position="2148,443" size="100,100">(enchant: ?mars&#39;s lines, via  (t8n-delay:pos * 1200) + (t8n:&#39;instant&#39;) + (bg:black))
+
+|mars&gt;[While walking towards your tent, something sticks to your boot.
+
+It&#39;s covered in dust and... Guess what? 
+
+Cat hair, orange.
+
+You grab it, a bit disgusted. It&#39;s a material you haven&#39;t encountered before.
+
+What do you do?]
+
+
+(live: 8s)[(stop:)
+(bg:#e9fac8)[[[Throw it away, it&#39;s been a long day-&gt;Throw it away]]]
+
+(bg:#e9fac8)[[[Call Amos to check-&gt;Call Amos]]]
+
+(bg:#e9fac8)[[[You expose it to the light-&gt;take a look]]]
+]
+</tw-passagedata><tw-passagedata pid="24" name="Get your prize!" tags="stars" position="2571,325" size="100,100">(enchant: ?passage&#39;s chars, via  (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))
+
+## You finished the game :D
+
+This game was brought to you by &lt;a href=&quot;https://openhardware.space&quot; target=&quot;_blank&quot;&gt;Open Hardware Makers.&lt;/a&gt;
+
+Open Hardware Makers is an online mentorship program that supports hardware projects in their way of acquiring best practices, building welcoming and inclusive communities and connecting to existing networks. 
+
+(text-colour:#d0bfff)[Leave us your details &lt;a href=&quot;&quot;&gt;here&lt;/a&gt; so we can send you a prize.]
+
+(box:&quot;===XX&quot;)[[[Go back to the Start-&gt;Start]]]</tw-passagedata><tw-passagedata pid="25" name="something" tags="stars" position="54,352" size="100,100">(enchant: ?delay&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))
+
+|delay&gt;[You walk towards the beverages replicator. 
+
+You really need some...] (live: 3s)[(stop:)|cocoa&gt;[Hot cocoa-based drink.]]
+(click-append: ?cocoa)[
+(font: &quot;monospace&quot;)+(text-colour: orange)+(text-style:&quot;buoy&quot;)[
+##&#39;&#39;== OUT OF ORDER ==&#39;&#39;]
+
+//&quot;Weird&quot;,// you think. //&quot;Maybe I forgot to plug my tent to the main power grid last night&quot;.// 
+
+//[[Maybe not?-&gt;&quot;Weird&quot;]]//]</tw-passagedata><tw-passagedata pid="26" name="Look, there" tags="basecamp" position="535,266" size="100,100">(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;)+(background:black))
+
+//&quot;It&#39;s fixed&quot;//, says Amos.
+
+After fixing, three packages fall on the floor.
+
+One of them is in a red case, the code for URGENT MESSAGE.
+
+&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/mail2.png&quot; align=&quot;right&quot; width=&quot;20%&quot;&gt;
+ 
+&#39;&#39;Which one do you pick?&#39;&#39;
+
+(text-style:&quot;sway&quot;)[[read message 1]]
+
+(text-style:&quot;sway&quot;)[[read message 2]]
+
+(text-style:&quot;sway&quot;)[[read message 3]]
+
+
+</tw-passagedata><tw-passagedata pid="27" name="&quot;NOTHING?!&quot;" tags="radio" position="1080,916" size="100,100">(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;)+(background:black))
+
+You share the message with Alix.
+
+//&quot;Nice&quot;//, she says, uninterested, //&quot;but let me tell you how this is AMAZING!&quot;//
+
+Amos comes into the tent before she can explain. 
+
+//&quot;Well, it&#39;s been 18 hours, and we have all finished repairing the other artifacts, we need the radio now&quot;// he says. 
+
+He looks at both of you: //&quot;Have you made any progress?&quot;//
+
+[[Alix&#39;s face turns red...]]
+</tw-passagedata><tw-passagedata pid="28" name="late" tags="stars" position="20,203" size="100,100">(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))
+
+It&#39;s the year (text-style:&quot;mark&quot;)[2171]. We are in the &lt;a href=&quot;https://en.wikipedia.org/wiki/Albireo&quot;&gt;β Cygni system&lt;/a&gt;. 
+
+In the LDV planet, colonists get up and start working way before sunrise(s). 
+
+Taking part in this mission to terraform LDV seemed like a great idea in the beginning, but work has become quite repetitive. 
+
+You get out of your dome bed (text-style:&quot;expand&quot;)[slowly]. 
+
+//- &quot;I need [[something]] to wake me up&quot;// </tw-passagedata><tw-passagedata pid="29" name="you ask" tags="basecamp" position="421,291" size="100,100">(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;)+(background:black))
+//&quot;Here, fixing the mail, something is stuck in there&quot;//, Amos growls.
+
+//&quot;Most artifacts in the camp are dead, and no one knows why&quot;// he continues.
+
+&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/mail.jpg&quot; align=&quot;right&quot; width=&quot;30%&quot;&gt;
+
+You take a look at the camp&#39;s main mailing system. It has always fascinated you.
+&lt;br&gt;
+The mechanism is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Pneumatic_tube&quot;&gt;relic from the early 20th century&lt;/a&gt;, and it still works. Just compressed air, and physics.
+
+But a [[dry noise-&gt;Look, there]] distracts you from your day-dreaming. </tw-passagedata><tw-passagedata pid="30" name="options" tags="basecamp" position="1014,292.3333333333333" size="100,100">(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;)+(background:black))
+
+|primero&gt;[A long, uncomfortable silence stays in the base camp.
+
+Finally, Amos speaks.
+
+//&quot;All of you are right&quot;// he says.//&quot;All these artifacts are vital, we do need to get them operative right now&quot;//
+
+//&quot;We need to divide the work in teams&quot;// says someone in an olive green suit.]
+
+(live: 12s)[(stop:)|next2&gt;[&#39;&#39;He looks at you.&#39;&#39;]]
+
+(click-append: ?next2)[(bg:black)+(text-colour:white)[&lt;br&gt;&lt;br&gt;//&quot;What are you going to repare?&quot;//, he asks.]
 
 * (text-colour:black)+(background:#c0eb75)[[radio]]
 * (text-colour:black)+(background:#d0bfff)[[wind mill]]
 * (text-colour:black)+(background:#fcc2d7)[[kombucha]]
-]</tw-passagedata><tw-passagedata pid="7" name="radio" tags="reinventing-wheel" position="1014,440" size="100,100">You decide to join (text-colour:black)+(background:#c0eb75)[Alix] in the quest of restoring communications.
+]</tw-passagedata><tw-passagedata pid="31" name="&quot;Weird&quot;" tags="stars" position="184,289" size="100,100">(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;)+(background:black))
 
-The solar flare had no mercy with the camp&#39;s main radio station. The circuits are fried, and a horrible smell floats around the comms camp.
+Noises outside of your tent call your attention. 
 
-Alix is super enthusiastic about repairing the radio. Back on Earth, she took a course on (text-colour:#7048e8)+(background:#dbe4ff)[“Blockchain and the future of communications”], and is willing to use this opportunity to overhaul comms at the camp.
+The rest of the colonists are usually pretty active, but the tunnels between the tents keep everything silent.
 
-//&quot;We can make the radio so much more efficient this way! Follow me&quot;//. 
+//&quot;Something important is going on&quot;//, you think
 
-She looks truly decided.
+You get into your suit and quickly [[make your way]] towards the camp.
 
-[[Follow Alix]] 
+&lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/chatternoise.mp3&quot; autoplay&gt;
+</tw-passagedata><tw-passagedata pid="32" name="Throw it away" tags="Dead-end" position="2070,583" size="100,100">(enchant: ?passage&#39;s chars, via  (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;) + (bg:black))
 
-[[You take a minute]] 
-</tw-passagedata><tw-passagedata pid="8" name="wind mill" tags="" position="1014,292" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="9" name="kombucha" tags="" position="993,154" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="10" name="throw it away" tags="Dead-end" position="2270,430" size="100,100">Hey, you don&#39;t throw anything away just like that in LDV, at least take it to the recycling facility.
+# Ouch! 
 
-DEAD END</tw-passagedata><tw-passagedata pid="11" name="call john" tags="Dead-end" position="2287,303" size="100,100">&quot;With everything I&#39;m taking care of, you call me for this!?&quot;
+As soon as you decide to throw the weird thing away, the orange cat appears from nowhere and bites your hand.
 
-You pissed John off, and will have to take care of cleaning the toilets in the next turn.
+Remember: you don&#39;t throw anything away just like that in LDV, at least take it to the recycling facility.
 
-DEAD END</tw-passagedata><tw-passagedata pid="12" name="take a look" tags="" position="2249,184" size="100,100">The sticky material has some words printed on it...
+//&quot;Amos trained you well&quot;//, you tell the cat.
 
-&#96;SuH, mu&#39;mey, Qo&#39;noSvam.
+[[Go back-&gt;take a nap]]</tw-passagedata><tw-passagedata pid="33" name="Call Amos" tags="Dead-end" position="2187,684" size="100,100">(enchant: ?passage&#39;s chars, via  (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;) + (bg:black))
 
-naDev jIQoy&#39;, jIHvaD neH &#39;umqu&#39; ghaH. Hu&#39; qaStaHvIS ramvam, tIqwIjDaq ghotpu&#39;vetlh. ja&#39;chuqtaHghach qeqmeylIj vIyajchu&#39;.
+You take the sticky material to Amos.
 
-DIvwI&#39;pu&#39; maHbe&#39;chugh. chenlaHbe&#39; &#39;e&#39; DaHarlaHbe&#39; &#39;e&#39; DaTu&#39;. nItebHa&#39; choraQ.
+//&quot;With everything I have to do since the solar flare, you call me for this!?&quot;//, he growls at you.
 
-ha&#39;DIbaH tlhutlhlI&#39; Hamlet. &#39;a ghImtaHvIS poH nuvpu&#39;, nom QaHtaHvIS poH nuvpu&#39;&#96;
+You pissed Amos off. You are sure he will assign you to cleaning the toilets in the next turn.
 
+[[Go back-&gt;take a nap]] </tw-passagedata><tw-passagedata pid="34" name="Alix&#39;s face turns red..." tags="Dead-end" position="1080,1066" size="100,100">(transition: &quot;pulse&quot;) +(transition-time: 5s)[# NOTHING?!] 
 
-What does it mean...? It&#39;s clear that this is in another language.
+|toilet&gt;[&lt;br&gt;You are both reassigned to manually cleaning the automated toilet system, for the rest of the week.]
 
-&quot;I am sure I can find an online translator for extraterrestrial languages, hold on...&quot;
+(live: 4s)[(stop:)[[Go back-&gt;radio]]]
 
-&quot;look, it also has a key: Q10134&quot;
+(enchant: ?toilet&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;)+(background:black))
 
-(input-box:&quot;=XX=&quot;,&quot;Which language is this?&quot;)
-[[keyword]]</tw-passagedata><tw-passagedata pid="13" name="keyword" tags="" position="2415,184" size="100,100">This is the backstory.
+</tw-passagedata><tw-passagedata pid="35" name="&quot;Oops&quot;" tags="basecamp" position="763.3333333333334,289.3333333333333" size="100,100">(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;)+(background:black))
 
-We were a civilization dependant on methane, we consumed it all (you should thank us for that)
+You take a look at Amos, and pass him the message.
 
-We were affected by the solar flare, but managed to find a solution.
+//&quot;This explains it all&quot;//, he says.
 
-Disseminate this information.
+//&quot;Is it true that we always ignore the outer science post&#39;s warnings?!&quot;//, you ask, worried.
 
-Most important: make sure knowledge is shared and properly documented, the future depends on that! 
+Your eyes move from Amos&#39; favourite mug to his red ears.
 
-[[Get your prize!]]</tw-passagedata><tw-passagedata pid="14" name="Follow Alix" tags="" position="1074,603" size="100,100">(text-colour:black)+(background:#c0eb75)[Alix] grabs a board and starts describing how blockchain can make radio even more amazing at the camp.
+(live: 9s)[(stop:)&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/mug.jpg&quot; width=20%&gt;]
 
-You recognize she has a point, it looks like a promising system.
+//&quot;Ehm... Let&#39;s [[gather everyone-&gt;base camp]]&quot;//, he ignores you. 
 
-But there&#39;s nothing you can do to contribute to this the new radio. No idea where to start.
+</tw-passagedata><tw-passagedata pid="36" name="You connect the wire" tags="Dead-end" position="1283,745" size="100,100">(transition: &quot;pulse&quot;) +(transition-time: 5s)[# BOOM!] 
 
-You are starting to regret joining her, when you find a [[paper-&gt;puzzle]] in the floor.
-</tw-passagedata><tw-passagedata pid="15" name="You take a minute" tags="" position="1165,438" size="100,100">You take a minute to think. Radios are complicated but you are aware that ham radio operators have been a big thing on earth since the early XXth century. 
+|boom&gt;[All power goes out in the dome. 
 
-If the camp was truly based on OSH as the instructor told you in your first day of training, docs for building the radio must be somewhere.  
+(text-colour:#ffd8a8)[You are both reassigned to manually cleaning the automated toilet system, for the rest of the week.]
 
-“Hey Alix, what if we first take a look at this folder full of docs right here, in the drawer that says RADIO INSTRUCTIONS?”
+[[Go back-&gt;Open the radio docs]]]
 
-Alix rolls her eyes but agrees to check the docs first with you
+(enchant: ?boom&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;)+(bg:black))
 
-[[Open the radio docs]]
-</tw-passagedata><tw-passagedata pid="16" name="puzzle" tags="" position="1082,730" size="100,100">//&quot;Weird&quot;//, you think to yourself while (text-colour:black)+(background:#c0eb75)[Alix] keeps talking... //&quot;We don&#39;t produce paper at LDV&quot;//.
+&lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/powerdown.mp3&quot; autoplay&gt;
+</tw-passagedata><tw-passagedata pid="37" name="Hey, wait." tags="radio" position="1397,576" size="100,100">(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;) + (bg:black))
 
-You unroll it, it has orange cat hair all over it.
+//&quot;According to the schematic we should have a tiny component here, but there is nothing in the radio&quot;// you point out.
 
-(font: &quot;monofont&quot;)+(text-colour:orange)[
+She checks. 
 
-Welcome, maker. 
+//&quot;Uhm, You are right...&quot;//
 
-&lt;img src=&quot;https://drive.google.com/file/d/1jHeinM1xyyhdb7UeYhJvca2IdCzUa3lI/view?usp=sharing&quot;&gt;
+//&quot;Probably evaporated as a result of the solar flare&quot;// she says.
 
-There are 8 words hidden in this soup. 
+//&quot;If we could [[identify-&gt;Find out the missing component]] the missing component, we could replace it&quot;// Alix continues.</tw-passagedata><tw-passagedata pid="38" name="Solve the riddle" tags="message" position="1768,584" size="100,100">(enchant: ?passage&#39;s chars, via (text-colour: black))
 
-These eight words, when assembled, form a sentence. 
-
-This sentence is the key for unlocking years of knowledge accumuated by humanity!
-]
-
-|key&gt;[Unlocked the sentence? Write it here:]
-
-(mouseover-append: ?key)[
-(force-input-box:&quot;=XX=&quot;,&quot;avoid reinventing the wheel check previous work first&quot;)]
-
-You take the message to Alix and try to explain her, when John come into the tent. 
-
-&quot;We have finished repairing the other key artifacts, but we need the radio now, have you made any progress?&quot;
-
-[[&quot;NOTHING?!&quot;]]</tw-passagedata><tw-passagedata pid="17" name="&quot;NOTHING?!&quot;" tags="Dead-end" position="1067,906" size="100,100">Alix and you are reassigned to manually cleaning the ex-automated toilet system 
-
-[[radio]]</tw-passagedata><tw-passagedata pid="18" name="Open the radio docs" tags="assembly-instructions" position="1278,435" size="100,100">The first thing you read is that the camp’s radio is based on a pioneer model by Earth XX century maker, Hans Idzerda. 
-
-You’re glad you didn’t try to reinvent this, but you keep it to yourself… Alix’s bad humour is well known in the camp.
-
-“Hey look, that’s a [schematic] of the radio, and also some assembly instructions” says Alix
-
-&lt;appears schematic&gt;
-
-Indeed, it looks like a complete description of the electronics in your camp’s radio! 
-
-Alix is already grabbing a screwdriver and opening the radio, that releases a small but smelly cloud of smoke. 
-
-You take a look inside, and realize that all parts are organized in a specific way. 
-
-“OK, we have the information… Where do we start?” 
-
-Let&#39;s take look at the [[instructions]]
-
-[[Boring!]]
-</tw-passagedata><tw-passagedata pid="19" name="instructions" tags="" position="1397,426" size="100,100">You &amp; Alix have been reading the assembly instructions and comparing them with the open radio. 
-
-You have both noticed a pattern: the components in the radio are organized in groups, by function. 
-
-&quot;There is a component missing in the modulator of the radio&quot; Alix points out. 
-
-You check, she is right. Probably as a result of the solar flare, one component evaporated from the radio. 
-
-&quot;If we just knew which component is missing... we could try to replace it&quot; Alix continues.
-
-&quot;Hey! I think there is a hint here&quot;
-
-[[Find out the missing component]]</tw-passagedata><tw-passagedata pid="20" name="Boring!" tags="Dead-end" position="1283,595" size="100,100">&quot;There&#39;s a red wire here that goes nowhere&quot; says Alix
-
-&quot;Let&#39;s connect it to [emergency power],&quot; you suggest.
-
-#BOOM
-
-Alix and you are reassigned to manually cleaning the ex-automated toilet system 
-
-DEAD END
-
-</tw-passagedata><tw-passagedata pid="21" name="Find out the missing component" tags="" position="1519,433" size="100,100">You turn the page of the assembly instructions, and find a note: 
-
-==============================================================
-The modulator requires a component that is not easy to find, but can be obtained easily using the following:
-
-.... .- --       .-. .- -.. .. ---       .-. --- -.-. -.- ...
-
-==============================================================
-
-&quot;What does that mean!?&quot; Alix wonders.
-
-&quot;Looks like a code...&quot;
-
-Input the secret key:
-(force-input-box:&quot;=XX=&quot;,&quot;ham radio rocks&quot;)
-
-[[Yay! we found it]]
-</tw-passagedata><tw-passagedata pid="22" name="Yay! we found it" tags="BoM" position="1640,428" size="100,100">&quot;Hey, that&#39;s a HRR!&quot; Alex shouts out of nowhere. 
-
-&quot;Uhm, ok?&quot; you don&#39;t understand the enthusiasm.
-
-&quot;Look here, at the list of components of the radio, it&#39;s just like a recipe&quot;
-
-&lt;BoM&gt;
-
-&quot;Here it is, the radio needs 4 HRR components to work&quot;
-
-&quot;We don&#39;t have those, they were fried by the flare&quot;
-
-&quot;Well there is a [[footnote]] here, next to the HHR drawings, maybe it helps...&quot;
-</tw-passagedata><tw-passagedata pid="23" name="footnote" tags="Modularity" position="1768,434" size="100,100">## Hints
+## Missing game here
 
 - Point 1 
 https://goo.gl/maps/46FDnoeiLE6DQhZ88
@@ -295,70 +593,21 @@ https://goo.gl/maps/Rv2oHemFpSdBy2yV7
 - Point 3
 Q36488 
 
-Enter a four-digit number
-(input-box:&quot;=XX=&quot;)
+It takes you a while, but you solve it. Take note of the message somewhere safe, you will need it later on.
 
-## Solution
+[[Let&#39;s fix this radio-&gt;Replace components]]</tw-passagedata><tw-passagedata pid="39" name="nop" tags="Dead-end" position="2337.3333333333335,695.6666666666667" size="100,100">(enchant: ?passage&#39;s chars, via  (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;) + (bg:black))
 
-==
-HRR components are not easily found anymore, but you can easily replace them with current standard TM-2 components
-==
+You are either too young, or you don&#39;t like science fiction. 
 
-&quot;Hey! We have a drawer full of TM-2!&quot; says Alix.
+We hope it&#39;s the first one!
 
-[[Replace components]]
-</tw-passagedata><tw-passagedata pid="24" name="Replace components" tags="" position="1887,439" size="100,100">&lt;play radio sound&gt;
+[[Go back-&gt;take a look]] </tw-passagedata><tw-passagedata pid="40" name="nop2" tags="Dead-end" position="2444,589" size="100,100">(enchant: ?passage&#39;s chars, via  (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;) + (bg:black))
 
-Wooohooo! Radio is working!
+You are either too young, or you don&#39;t like science fiction. 
 
-&quot;I love TM-2, they just fix every artifact that is well designed, in a modular way&quot; 
+We hope it&#39;s the first one!
 
-[[Run to camp]] with the good news</tw-passagedata><tw-passagedata pid="25" name="Run to camp" tags="" position="1932,298" size="100,100">You run to the base camp to show the others how your reparing has gone well.
-
-&quot;Amazing! We have reconstructed the basic artifacts we needed in less than a day!&quot; John was happy for the first time since the flare hit the camp.
-
-With the wind mill, the brewing and the comms back at work, everyone is delighted and also exhausted.
-
-You decide to go back to your tent, [[take a nap]]. At least before the two suns rise again.</tw-passagedata><tw-passagedata pid="26" name="take a nap" tags="" position="2075,298" size="100,100">While walking towards your tent, you notice something in the floor, it sticked to your boot.
-
-It&#39;s covered in dust, the material looks strange to you.
-
-[[throw it away]], it&#39;s been a long day
-[[call john]]
-[[take a look]]</tw-passagedata><tw-passagedata pid="27" name="Get your prize!" tags="" position="2585,200" size="100,100">About Open Hardware Makers
-
-Leave us your details and we will send you a prize.
-
-Go back to the [[start]]</tw-passagedata><tw-passagedata pid="28" name="start" tags="" position="2585,350" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="29" name="something" tags="" position="203,291" size="100,100">You walk towards the beverages replicator.
-
-(link: &quot;Get a hot cocoa-based drink&quot;)[(font: &quot;monospace&quot;)[ (text-style:&quot;buoy&quot;)[
-##&#39;&#39;== OUT OF ORDER ==&#39;&#39;]]]
-
-//&quot;Maybe I forgot to plug my tent to the main power grid last night&quot;,// you think. 
-
-(text-style:&quot;emboss&quot;)[Suddenly], noises outside of your tent call your attention. 
-
-The rest of the colonists are usually pretty active, but the tunnels between the tents keep everything silent.
-
-If you can hear the noise, it&#39;s because something important is going on.
-
-You get into your suit and quickly [[make your way]] towards the camp.</tw-passagedata><tw-passagedata pid="30" name="Look, there" tags="" position="444,291" size="100,100">The mailing system had some packages stuck. 
-
-After Amos fixes it, (text-style:&quot;mark&quot;)[three packages] fall on the floor.
-
-One of them is in a red case, the code for (background:red)[URGENT MESSAGE].
-
-&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Rohrpostbuechse.jpg/800px-Rohrpostbuechse.jpg&quot; height=&quot;20%&quot;&gt;
-
-&#39;&#39;Which one do you pick?&#39;&#39;
-
-(text-style:&quot;sway&quot;)[[read message 1]]
-
-(text-style:&quot;sway&quot;)[[read message 2]]
-
-(text-style:&quot;sway&quot;)[[read message 3]]
-
-</tw-passagedata></tw-storydata>
+[[Go back-&gt;take a look]] </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
