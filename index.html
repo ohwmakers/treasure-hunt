@@ -134,7 +134,7 @@ color:  #a61e4d;
 	background:teal;
 	color: white;
     line-height: 150%;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="BoM" color="green"></tw-tag>,<tw-tag name="Dead-end" color="yellow"></tw-tag>,<tw-tag name="Modularity" color="green"></tw-tag>,<tw-tag name="assembly-instructions" color="green"></tw-tag>,<tw-tag name="fails" color="red"></tw-tag>,<tw-tag name="fermenter" color="purple"></tw-tag>,<tw-tag name="fermentor-room" color="orange"></tw-tag>,<tw-tag name="notebook" color="blue"></tw-tag>,<tw-tag name="reinventing-wheel" color="green"></tw-tag>,<tw-tag name="tunnel" color="orange"></tw-tag>,<tw-tag name="word-soup" color="purple"></tw-tag>,<tw-tag name="message" color="yellow"></tw-tag>,<tw-tag name="kitchen" color="purple"></tw-tag><tw-passagedata pid="1" name="Start" tags="stars" position="26,64" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="BoM" color="green"></tw-tag>,<tw-tag name="Dead-end" color="yellow"></tw-tag>,<tw-tag name="Modularity" color="green"></tw-tag>,<tw-tag name="assembly-instructions" color="green"></tw-tag>,<tw-tag name="fails" color="red"></tw-tag>,<tw-tag name="fermenter" color="purple"></tw-tag>,<tw-tag name="fermentor-room" color="orange"></tw-tag>,<tw-tag name="kitchen" color="purple"></tw-tag>,<tw-tag name="message" color="yellow"></tw-tag>,<tw-tag name="notebook" color="blue"></tw-tag>,<tw-tag name="reinventing-wheel" color="green"></tw-tag>,<tw-tag name="tunnel" color="orange"></tw-tag>,<tw-tag name="word-soup" color="purple"></tw-tag><tw-passagedata pid="1" name="Start" tags="stars" position="26,64" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 (set: $wheat_photo to false)
 (set: $door_photo to false)
 (set: $code_entered to false)
@@ -852,7 +852,7 @@ Take note of it! You will need it later.
 [[Now let&#39;s fix this radio-&gt;&quot;NOTHING?!&quot;]]]
 
 (if: (lowercase: $riddleWheel) is not &quot;do not try to reinvent the wheel better collaborate&quot;)[Nop, [[Try again-&gt;puzzle]]]
-</tw-passagedata><tw-passagedata pid="44" name="follow Kev" tags="tunnel" position="1194,562" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+</tw-passagedata><tw-passagedata pid="44" name="follow Kev" tags="tunnel" position="1180.6666666666667,587.0000000000001" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
 (if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
 
@@ -874,8 +874,8 @@ Kev presses a button at the side of the door. It opens with a wooosh sound.
 
 &lt;span class=&quot;dialogue&quot;&gt; ”Ahh, still works. Good old hydraulics. Not many electronics in there to be destroyed by a solar fair.” &lt;/span&gt;]]
 
-(live: 36s)[(stop:)|next2&gt;[[Enter the fermenter room]]]
-</tw-passagedata><tw-passagedata pid="45" name="Enter the fermenter room" tags="fermentor-room" position="1300,694" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+(live: 36s)[(stop:)|next2&gt;[ [[Enter the fermenter room]] ]]
+</tw-passagedata><tw-passagedata pid="45" name="Enter the fermenter room" tags="fermentor-room" position="1303.3333333333333,695.6666666666666" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 (if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
 (live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
 
@@ -966,7 +966,7 @@ Check the [[small case]]
 
 &lt;span class=&quot;dialogue&quot;&gt; “Aahh! This remindes me of a conversation I had with the brew master once!”&lt;/span&gt;, says Kev. &lt;span class=&quot;dialogue&quot;&gt; &quot;He basically told me his life story... well, old withe men, you know.&quot;. &quot;Anyways..&quot; &lt;/span&gt;, Kev continues, &lt;span class=&quot;dialogue&quot;&gt; &quot;apparently he learned brewing at the oldest brewery in the world which is still producing beer. He took this photos on his last week on earth and kept them as a memory.
 ]]
-</tw-passagedata><tw-passagedata pid="53" name="small case" tags="fermentor-room" position="1633,796.3333333333334" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+</tw-passagedata><tw-passagedata pid="53" name="small case" tags="fermentor-room" position="1633,796" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 (if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
 
 |primero&gt;[There is a sticky note on the case with the lock saying. &quot;Reminder to myself: What&#39;s the founding year of the place where you learned the art of brewing? Remember the number of the inoffical lecture hall we always visited last?&quot;
@@ -986,7 +986,7 @@ Check the [[small case]]
 
 ]
 
-</tw-passagedata><tw-passagedata pid="54" name="Take a closer look at the Photo with the entrance" tags="notebook" position="1772,460.33333333333337" size="100,100">&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/brew_entrance.jpg&quot;&gt;
+</tw-passagedata><tw-passagedata pid="54" name="Take a closer look at the Photo with the entrance" tags="notebook" position="1772,460" size="100,100">&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/brew_entrance.jpg&quot;&gt;
 [[Back-&gt;notebook]]
 (set: $door_photo to true)</tw-passagedata><tw-passagedata pid="55" name="Take a closer look at the Photo with the wheat beer glass" tags="notebook" position="1625,405" size="100,100">&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/beer.jpg&quot;&gt;
 [[Back-&gt;notebook]]
@@ -1025,7 +1025,7 @@ Silence.
 </tw-passagedata><tw-passagedata pid="60" name="go to the kitchen" tags="kitchen" position="2001,771" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 (if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
 
-You can convice the cook to create a broth out of potatoes for you. You take a huge bottle of the potato broth and [[return to the fermenter room]]</tw-passagedata><tw-passagedata pid="61" name="return to the fermenter room" tags="fermentor-room" position="2029.3333333333333,652.6666666666666" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+You can convice the cook to create a broth out of potatoes for you. You take a huge bottle of the potato broth and [[return to the fermenter room]]</tw-passagedata><tw-passagedata pid="61" name="return to the fermenter room" tags="fermentor-room" position="2029,652" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 (if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
 
 When you are back in the fermenter room again kev says &lt;span class=&quot;dialogue&quot;&gt; &quot;Well, I guess it is better to make a netuk starter from the stocks in the thawing freezer. We don&#39;t know if the remains in the fermentor got already contaminated while we took so long to find a recipe.&quot; &lt;/span&gt;, he walks to one of the big fermentation bottles the brew master usually uses to test recipe varieties in a small batch.  &lt;span class=&quot;dialogue&quot;&gt; &quot;We can use this to [[make the starter]]!&quot; &lt;/span&gt;</tw-passagedata><tw-passagedata pid="62" name="make the starter" tags="fermentor-room" position="2115,778" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
@@ -1064,7 +1064,7 @@ She checks.
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;Probably evaporated as a result of the solar flare&quot;&lt;/span&gt; she says.
 
-&lt;span class=&quot;dialogue&quot;&gt;&quot;If we could [[identify-&gt;Find out the missing component]] the missing component, we could replace it&quot;&lt;/span&gt;, Alix continues.</tw-passagedata><tw-passagedata pid="65" name="Tell Kev the temperature" tags="message" position="2152.6666666666665,658.3333333333334" size="100,100">(if: $ferment_temp is &quot;12&quot;)[
+&lt;span class=&quot;dialogue&quot;&gt;&quot;If we could [[identify-&gt;Find out the missing component]] the missing component, we could replace it&quot;&lt;/span&gt;, Alix continues.</tw-passagedata><tw-passagedata pid="65" name="Tell Kev the temperature" tags="message" position="2152,658" size="100,100">(if: $ferment_temp is &quot;12&quot;)[
 &lt;br&gt;
 &lt;br&gt;
 # Correct answer!
@@ -1093,7 +1093,7 @@ You follow Kev into the tunnel, set up the fermentation bottle together and wait
 (live: 14s)[(stop:)
 |primero&gt;[&lt;span class=&quot;dialogue&quot;&gt; &quot;Do you hear this??&quot; &lt;/span&gt;, asks Kev. &lt;span class=&quot;dialogue&quot;&gt; &quot;Sounds like we were successful!!!&quot; &lt;/span&gt;]]
 
-(live: 20s)[(stop:) You both cheer and high five eachother. After you listened to the bubbling of the netuk fermentation for a while you decide to [[go back to the camp -&gt;Run to camp]] ]</tw-passagedata></tw-storydata>
+(live: 20s)[(stop:) You both cheer and high five eachother. After you listened to the bubbling of the netuk fermentation for a while you decide to [[go back to the camp -&gt;Run to camp]] ]</tw-passagedata><tw-passagedata pid="68" name="[Enter the fermenter room" tags="" position="1180,730.3333333333335" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
