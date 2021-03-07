@@ -35,8 +35,18 @@ tw-story[tags~="tunnel"] {
  background-size:cover;
 }
 
-tw-story[tags~="fermentor-room"] {
+tw-story[tags~="kitchen"] {
+ background-image:url("https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/kitchen_dark.jpg");
+ background-size:cover;
+}
+
+tw-story[tags~="fermenter"] {
  background-image:url("https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/machine_small-dark.jpg");
+ background-size:cover;
+}
+
+tw-story[tags~="notebook"] {
+ background-image:url("https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/notebook_dark.jpg");
  background-size:cover;
 }
 
@@ -124,7 +134,7 @@ color:  #a61e4d;
 	background:teal;
 	color: white;
     line-height: 150%;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="BoM" color="green"></tw-tag>,<tw-tag name="Dead-end" color="yellow"></tw-tag>,<tw-tag name="Modularity" color="green"></tw-tag>,<tw-tag name="assembly-instructions" color="green"></tw-tag>,<tw-tag name="fails" color="red"></tw-tag>,<tw-tag name="fermentor-room" color="orange"></tw-tag>,<tw-tag name="reinventing-wheel" color="green"></tw-tag>,<tw-tag name="tunnel" color="orange"></tw-tag>,<tw-tag name="word-soup" color="purple"></tw-tag>,<tw-tag name="fermenter" color="purple"></tw-tag><tw-passagedata pid="1" name="Start" tags="stars" position="26,64" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="BoM" color="green"></tw-tag>,<tw-tag name="Dead-end" color="yellow"></tw-tag>,<tw-tag name="Modularity" color="green"></tw-tag>,<tw-tag name="assembly-instructions" color="green"></tw-tag>,<tw-tag name="fails" color="red"></tw-tag>,<tw-tag name="fermenter" color="purple"></tw-tag>,<tw-tag name="fermentor-room" color="orange"></tw-tag>,<tw-tag name="notebook" color="blue"></tw-tag>,<tw-tag name="reinventing-wheel" color="green"></tw-tag>,<tw-tag name="tunnel" color="orange"></tw-tag>,<tw-tag name="word-soup" color="purple"></tw-tag>,<tw-tag name="message" color="yellow"></tw-tag>,<tw-tag name="kitchen" color="purple"></tw-tag><tw-passagedata pid="1" name="Start" tags="stars" position="26,64" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 (set: $wheat_photo to false)
 (set: $door_photo to false)
 (set: $code_entered to false)
@@ -622,7 +632,7 @@ You take a look at the camp&#39;s main mailing system. It has always fascinated 
 The mechanism is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Pneumatic_tube&quot;&gt;relic from the early 20th century&lt;/a&gt;, and it still works. Just compressed air, and physics.
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;It&#39;s [[fixed-&gt;Look, there]]&quot;&lt;/span&gt;, says Amos, and distracts you from your day-dreaming. 
-</tw-passagedata><tw-passagedata pid="28" name="options" tags="basecamp" position="1010.3333333333334,295.3333333333333" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+</tw-passagedata><tw-passagedata pid="28" name="options" tags="basecamp" position="1010,295" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
 (if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
 
@@ -758,7 +768,7 @@ We hope it&#39;s the first one!&lt;/snap&gt;
 
 [[Go back-&gt;take a look]] 
 
-&lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/worf.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="38" name="Join Kev and follow him to the fermentor building" tags="basecamp" position="1129,437.6666666666667" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+&lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/worf.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="38" name="Join Kev and follow him to the fermentor building" tags="basecamp" position="1129,437" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
 (if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
 
@@ -842,7 +852,7 @@ Take note of it! You will need it later.
 [[Now let&#39;s fix this radio-&gt;&quot;NOTHING?!&quot;]]]
 
 (if: (lowercase: $riddleWheel) is not &quot;do not try to reinvent the wheel better collaborate&quot;)[Nop, [[Try again-&gt;puzzle]]]
-</tw-passagedata><tw-passagedata pid="44" name="follow Kev" tags="tunnel" position="1194,562.6666666666666" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+</tw-passagedata><tw-passagedata pid="44" name="follow Kev" tags="tunnel" position="1194,562" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
 (if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
 
@@ -865,7 +875,7 @@ Kev presses a button at the side of the door. It opens with a wooosh sound.
 &lt;span class=&quot;dialogue&quot;&gt; ”Ahh, still works. Good old hydraulics. Not many electronics in there to be destroyed by a solar fair.” &lt;/span&gt;]]
 
 (live: 36s)[(stop:)|next2&gt;[[Enter the fermenter room]]]
-</tw-passagedata><tw-passagedata pid="45" name="Enter the fermenter room" tags="fermentor-room" position="1299,696.3333333333334" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+</tw-passagedata><tw-passagedata pid="45" name="Enter the fermenter room" tags="fermentor-room" position="1300,694" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 (if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
 (live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
 
@@ -882,7 +892,7 @@ Kev presses a button at the side of the door. It opens with a wooosh sound.
 &lt;span class=&quot;dialogue&quot;&gt; &quot;[[Let&#39;s try our luck with what we have]]. Or maybe we can [[find the recipe]] for making the broth.&quot; &lt;/span&gt;]
 ]
 
-</tw-passagedata><tw-passagedata pid="46" name="Check the stock freezer" tags="fermentor-room" position="1265.9999999999998,447.66666666666663" size="100,100">(set: $visited to true)
+</tw-passagedata><tw-passagedata pid="46" name="Check the stock freezer" tags="fermentor-room" position="1265,447" size="100,100">(set: $visited to true)
 (set: $currentpassage to (passage:)&#39;s name)
 (if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
 (live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
@@ -891,7 +901,7 @@ Kev presses a button at the side of the door. It opens with a wooosh sound.
 
 &lt;span class=&quot;dialogue&quot;&gt; &quot;In order to rescue the stock we need to find some broth to put it in&quot;&lt;/span&gt;]
 
-[[Go back -&gt;Enter the fermenter room]]</tw-passagedata><tw-passagedata pid="47" name="Walk to the fermenter" tags="fermentor-room" position="1391,320.6666666666666" size="100,100">(set: $visited to true)
+[[Go back -&gt;Enter the fermenter room]]</tw-passagedata><tw-passagedata pid="47" name="Walk to the fermenter" tags="fermentor-room" position="1391,320" size="100,100">(set: $visited to true)
 (set: $currentpassage to (passage:)&#39;s name)
 (if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
 (live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
@@ -900,7 +910,7 @@ Kev presses a button at the side of the door. It opens with a wooosh sound.
 
 &lt;span class=&quot;dialogue&quot;&gt; &quot;If it dries out we won&#39;t be able to use the culture anymore...&quot;&lt;/span&gt;]
 
-[[Go back -&gt;Enter the fermenter room]]</tw-passagedata><tw-passagedata pid="48" name="Go to the broth producing machine" tags="fermentor-room" position="1434.3333333333333,437.6666666666666" size="100,100">(set: $visited to true)
+[[Go back -&gt;Enter the fermenter room]]</tw-passagedata><tw-passagedata pid="48" name="Go to the broth producing machine" tags="fermentor-room" position="1434,437" size="100,100">(set: $visited to true)
 (set: $currentpassage to (passage:)&#39;s name)
 (if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
 (live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
@@ -908,26 +918,30 @@ Kev presses a button at the side of the door. It opens with a wooosh sound.
 |primero&gt;[&lt;span class=&quot;dialogue&quot;&gt;Ah. That&#39;s where the sound comes from.&lt;/span&gt;, says Kev
 
 &lt;span class=&quot;dialogue&quot;&gt; &quot;[Look]. The maschine controls malfunctioned and it seems like everything overheated. The ingredients in the maschine are all burned. I don&#39;t think we can use them to make a broth for the fermentation&quot;&lt;/span&gt;]
+
 (click: &quot;Look&quot;)[&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/broth-machine_small.jpg&quot;&gt;]
 
-[[Go back -&gt;Enter the fermenter room]]</tw-passagedata><tw-passagedata pid="49" name="Let&#39;s try our luck with what we have" tags="fermentor-room" position="1484,731.3333333333334" size="100,100">Ok... what do we have available..
+[[Go back -&gt;Enter the fermenter room]]</tw-passagedata><tw-passagedata pid="49" name="Let&#39;s try our luck with what we have" tags="fermentor-room" position="1482,743" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+
+|primero&gt;[&lt;span class=&quot;dialogue&quot;&gt;&quot;Ok... what do we have available..&quot;&lt;/span&gt;, says Kev 
 
 0. burned malt extract
 0. salt with abration depris from the broth machine
 0. unidentified brown liquid
 0. clear liquid smelling like alkohol
 0. old piece of bread from one of the drawers of the brew masters desk
-0. green powder from a small bag which you found in a corner of the room
-Main ingredient
+0. green powder from a small bag which you found in a corner of the room]
+(live: 14s)[(stop:)|next&gt;[Main ingredient
 (dropdown: 2bind $main_ingredient, &quot;burned malt extract&quot;,&quot;salt&quot;,&quot;brown liquid&quot;,&quot;clear liquid&quot;,&quot;piece of bread&quot;,&quot;green powder&quot;,&quot;water&quot;)
 
 Minor ingredient
-(dropdown: 2bind $minor_ingredient, &quot;burned malt extract&quot;,&quot;salt&quot;,&quot;brown liquid&quot;,&quot;clear liquid&quot;,&quot;piece of bread&quot;,&quot;green powder&quot;,&quot;water&quot;)
+(dropdown: 2bind $minor_ingredient, &quot;burned malt extract&quot;,&quot;salt&quot;,&quot;brown liquid&quot;,&quot;clear liquid&quot;,&quot;piece of bread&quot;,&quot;green powder&quot;,&quot;water&quot;)]]
 
-(stop:)|reveal&gt;[Mix the ingredients]
+(live: 15s)[(stop:)|reveal&gt;[Mix the ingredients]]
 
 (click-append: ?reveal)[&lt;br&gt; &lt;br&gt; You mix the $main_ingredient with the $minor_ingredient and hope for the best... It combines to a substance with a wierd consistance. Do you really want to [[put this into the fermenter]] or rather [[try again -&gt;Let&#39;s try our luck with what we have]]?] 
-</tw-passagedata><tw-passagedata pid="50" name="find the recipe" tags="message" position="1384.6666666666667,860.3333333333334" size="100,100"># Correct approach!
+</tw-passagedata><tw-passagedata pid="50" name="find the recipe" tags="message" position="1386,860" size="100,100"># Correct approach!
 
 You earn +1 in knowledge:
 
@@ -937,9 +951,11 @@ You earn +1 in knowledge:
 
 Take note of it! You will need it later.
 
-Let&#39;s [[search the workbench]] for the recipe.</tw-passagedata><tw-passagedata pid="51" name="search the workbench" tags="fermentor-room" position="1513,900.6666666666666" size="100,100">You find a notebook and a small case with a numbers lock
+Let&#39;s [[search the workbench]] for the recipe.</tw-passagedata><tw-passagedata pid="51" name="search the workbench" tags="fermentor-room" position="1513,900" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
 
-Take a look at the [[notebook]] or the [[small case]]</tw-passagedata><tw-passagedata pid="52" name="notebook" tags="" position="1609,629" size="100,100">It’s a mess
+|primero&gt;[You search the workbench of the brewer and find a notebook and a small case with a numbers lock on it. Kev asks: &lt;span class=&quot;dialogue&quot;&gt;&quot;What should we to? Take a look at the [[notebook]] or at the [[small case]]?&quot;&lt;/span&gt;
+]</tw-passagedata><tw-passagedata pid="52" name="notebook" tags="notebook" position="1609,629" size="100,100">It’s a mess
 Just some scribble, notes, calculations, and two photos (Entrance, wheat beer glass)
 [[Take a closer look at the Photo with the entrance]]
 [[Take a closer look at the Photo with the wheat beer glass]]
@@ -950,32 +966,31 @@ Check the [[small case]]
 
 &lt;span class=&quot;dialogue&quot;&gt; “Aahh! This remindes me of a conversation I had with the brew master once!”&lt;/span&gt;, says Kev. &lt;span class=&quot;dialogue&quot;&gt; &quot;He basically told me his life story... well, old withe men, you know.&quot;. &quot;Anyways..&quot; &lt;/span&gt;, Kev continues, &lt;span class=&quot;dialogue&quot;&gt; &quot;apparently he learned brewing at the oldest brewery in the world which is still producing beer. He took this photos on his last week on earth and kept them as a memory.
 ]]
-</tw-passagedata><tw-passagedata pid="53" name="small case" tags="fermentor-room" position="1633,798" size="100,100">There is a sticky note on the case with the lock saying. &quot;Reminder to myself: What&#39;s founding year of the place where you learned the art of brewing? Remember the number of the inoffical lecture hall we always visited last?&quot;
+</tw-passagedata><tw-passagedata pid="53" name="small case" tags="fermentor-room" position="1633,796.3333333333334" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
 
-&lt;span class=&quot;dialogue&quot;&gt;&quot;Huh, seems like Gilbert was a bit forgetful. Good for us he left some hints for the lock code! &quot;&lt;/span&gt;, says Kev &lt;span class=&quot;dialogue&quot;&gt;&quot;But I have no clue what the numbers are ... I just know that &quot;lecture hall&quot; is &quot;Hörsaal&quot; in german. Don&#39;t ask me why... &quot;&lt;/span&gt;
+|primero&gt;[There is a sticky note on the case with the lock saying. &quot;Reminder to myself: What&#39;s the founding year of the place where you learned the art of brewing? Remember the number of the inoffical lecture hall we always visited last?&quot;
 
+&lt;span class=&quot;dialogue&quot;&gt;&quot;Huh, seems like Gilbert was a bit forgetful. Good for us he left some hints for the lock code! &quot;&lt;/span&gt;, says Kev &lt;span class=&quot;dialogue&quot;&gt;&quot;But I have no clue what the numbers are ... From my exchange semester in Germany I remember that &quot;lecture hall&quot; is &quot;Hörsaal&quot; in german. Don&#39;t ask me why... &quot;&lt;/span&gt; |next2&gt;[&#39;&#39;He looks at you.&#39;&#39;]]
 (if:$code_entered)[
-&lt;span class=&quot;dialogue&quot;&gt;&quot;Hm. Maybe we should look in the [[notebook]] for some more hints&quot; &lt;/span&gt;, says Kev &lt;span class=&quot;dialogue&quot;&gt;
+&lt;span class=&quot;dialogue&quot;&gt;&quot;Hm. Maybe we should look in the [[notebook]] for some more hints&quot; &lt;/span&gt;, says Kev.
 ]
 
-(live: 2s)[(stop:)|next2&gt;[&#39;&#39;He looks at you.&#39;&#39;]]
-
-(click-append: ?next2)[&lt;br&gt;&lt;br&gt;
+(click-append: ?next2)[&lt;br&gt;
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;What should we enter?&quot;&lt;/span&gt;, he asks.
 
 (input-box:2bind $lock_code,&quot;=XX=&quot;, 1, &quot;000000&quot;)
 
-
 [[enter the code]]
 
 ]
 
-</tw-passagedata><tw-passagedata pid="54" name="Take a closer look at the Photo with the entrance" tags="" position="1812.6666666666667,392.66666666666663" size="100,100">photo
-[[notebook]]
-(set: $door_photo to true)</tw-passagedata><tw-passagedata pid="55" name="Take a closer look at the Photo with the wheat beer glass" tags="" position="1625.6666666666667,405.66666666666663" size="100,100">Photo
-[[notebook]]
-(set: $wheat_photo to true)</tw-passagedata><tw-passagedata pid="56" name="enter the code" tags="" position="1759,770" size="100,100">(set: $code_entered to true)
+</tw-passagedata><tw-passagedata pid="54" name="Take a closer look at the Photo with the entrance" tags="notebook" position="1772,460.33333333333337" size="100,100">&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/brew_entrance.jpg&quot;&gt;
+[[Back-&gt;notebook]]
+(set: $door_photo to true)</tw-passagedata><tw-passagedata pid="55" name="Take a closer look at the Photo with the wheat beer glass" tags="notebook" position="1625,405" size="100,100">&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/beer.jpg&quot;&gt;
+[[Back-&gt;notebook]]
+(set: $wheat_photo to true)</tw-passagedata><tw-passagedata pid="56" name="enter the code" tags="fermentor-room" position="1759,770" size="100,100">(set: $code_entered to true)
 
 (if:$lock_code is &quot;131040&quot;)[
 Yeah! The lock is unlocked! You can [[open the case]] now.
@@ -984,18 +999,40 @@ Yeah! The lock is unlocked! You can [[open the case]] now.
 Nothing happens...
 Well, maybe [[try it again? -&gt;small case]]
 
-]</tw-passagedata><tw-passagedata pid="57" name="open the case" tags="" position="1791,644" size="100,100">You open the small case and find a smart device which is commonly used to browse the internet. When you take it out of the box it lights up and you can see the last webpage which was visited and cached in the browser. Unfortunately the pictures are not loading.
+]</tw-passagedata><tw-passagedata pid="57" name="open the case" tags="fermentor-room" position="1791,644" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+
+You open the small case and find a smart device which is commonly used to browse the internet. When you take it out of the box it lights up and you can see the last webpage which was visited and cached in the browser. Unfortunately the pictures are not loading.
 
 Take a look at &lt;a href=&quot;https://ohwmakers.github.io/treasure-hunt/assets/wikiHow-netuk.html#&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;the cached webpage&lt;/a&gt;
 
-[[show it to Kev]]</tw-passagedata><tw-passagedata pid="58" name="put this into the fermenter" tags="fermenter" position="1486,566.3333333333334" size="100,100">You add your mix of $main_ingredient with $minor_ingredient to the fermenter and wait...
+[[show it to Kev]]</tw-passagedata><tw-passagedata pid="58" name="put this into the fermenter" tags="fermenter" position="1486,566" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+
+You add your mix of $main_ingredient with $minor_ingredient to the fermenter and wait...
 
 (live: 10s)[(stop:)|wait&gt;[
-After you waited 10 minutes Kev says: &lt;span class=&quot;dialogue&quot;&gt; “Hmm... it should already show some signs of a beginning fermentation... I guess your mix can&#39;t replace the broth. Dam it...”&lt;/span&gt;. Silence. &lt;span class=&quot;dialogue&quot;&gt; &quot;Well, we have one last try with the culture stocks. We should really look for something the brew master documented. We have to be sure that it works! Let&#39;s [[find the recipe]] &lt;/span&gt;
-]
-</tw-passagedata><tw-passagedata pid="59" name="show it to Kev" tags="" position="1891,772.3333333333334" size="100,100">&lt;span class=&quot;dialogue&quot;&gt;&quot;Oh wow! That&#39;s great! Unfortunately we can&#39;t use the first method with the malt extract but I guess the cook still has some potatoes in his storage room!&quot; &lt;/span&gt;, responds Kev &lt;span class=&quot;dialogue&quot;&gt; &quot;Seems like [[we found a way to recreate a broth]]!&quot; &lt;/span&gt;
-</tw-passagedata><tw-passagedata pid="60" name="go to the kitchen" tags="" position="2001,771" size="100,100">You can convice the cook to create a broth out of potatoes for you. You take a huge bottle of the potato broth and [[return to the fermenter room]]
-</tw-passagedata><tw-passagedata pid="61" name="return to the fermenter room" tags="" position="2031,651" size="100,100">When you are back in the fermenter room again kev says &lt;span class=&quot;dialogue&quot;&gt;&quot;Well, I guess it is better to make a netuk starter from the stocks in the thawing freezer. We don&#39;t know if the remains in the fermentor got already contaminated while we took so long to find a recipe.&quot; &lt;/span&gt;, he walks to one of the big fermentation bottles the brew master usually uses to test recipe varieties in a small batch.  &lt;span class=&quot;dialogue&quot;&gt; &quot;We can use this to [[make the starter]]!&quot; &lt;/span&gt;</tw-passagedata><tw-passagedata pid="62" name="make the starter" tags="" position="2115.333333333333,778.6666666666667" size="100,100">Together with Kev&#39;s help you fill the potato broth into the huge bottle and add the content of one thawed stock vials.
+After you waited 10 minutes Kev says: &lt;span class=&quot;dialogue&quot;&gt; “Hmm... it should already show some signs of a beginning fermentation... I guess your mix can&#39;t replace the broth. Dam it...”&lt;/span&gt;. 
+
+Silence. 
+
+&lt;span class=&quot;dialogue&quot;&gt; &quot;Well, we have one last try with the culture stocks. We should really look for something the brew master documented. We have to be sure that it works! Let&#39;s [[find the recipe]]&quot; &lt;/span&gt;
+]]
+</tw-passagedata><tw-passagedata pid="59" name="show it to Kev" tags="fermentor-room" position="1891,772" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+
+&lt;span class=&quot;dialogue&quot;&gt;&quot;Oh wow! That&#39;s great! Unfortunately we can&#39;t use the first method with the malt extract but I guess the cook still has some potatoes in his storage room!&quot; &lt;/span&gt;, responds Kev &lt;span class=&quot;dialogue&quot;&gt; &quot;Seems like [[we found a way to recreate a broth]]!&quot; &lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="60" name="go to the kitchen" tags="kitchen" position="2001,771" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+
+You can convice the cook to create a broth out of potatoes for you. You take a huge bottle of the potato broth and [[return to the fermenter room]]</tw-passagedata><tw-passagedata pid="61" name="return to the fermenter room" tags="fermentor-room" position="2029.3333333333333,652.6666666666666" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+
+When you are back in the fermenter room again kev says &lt;span class=&quot;dialogue&quot;&gt; &quot;Well, I guess it is better to make a netuk starter from the stocks in the thawing freezer. We don&#39;t know if the remains in the fermentor got already contaminated while we took so long to find a recipe.&quot; &lt;/span&gt;, he walks to one of the big fermentation bottles the brew master usually uses to test recipe varieties in a small batch.  &lt;span class=&quot;dialogue&quot;&gt; &quot;We can use this to [[make the starter]]!&quot; &lt;/span&gt;</tw-passagedata><tw-passagedata pid="62" name="make the starter" tags="fermentor-room" position="2115,778" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+
+Together with Kev&#39;s help you fill the potato broth into the huge bottle and add the content of one thawed stock vials.
+
 &lt;span class=&quot;dialogue&quot;&gt;&quot;Here, seal it with this air lock. It should not take long and it will start bubbling&quot; &lt;/span&gt;, says Kev.
 
 You wait ... 
@@ -1004,9 +1041,7 @@ and wait ...
 But nothing is happening.
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;Ahh, dam it. I forgot! It has to be kept at the right temperature to start fermenting&quot; &lt;/span&gt;, says Kev. &lt;span class=&quot;dialogue&quot;&gt; &quot;But I forgot what the temperature should be... Maybe there is information about this on &lt;a href=&quot;https://ohwmakers.github.io/treasure-hunt/assets/wikiHow-netuk.html#&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;the cached webpage&lt;/a&gt;. What did you find? What&#39;s the optimal temperature in celsius?&quot; &lt;/span&gt;
-
 (input-box:2bind $ferment_temp,&quot;X====&quot;,1,&quot;&quot;)
-
 [[Tell Kev the temperature]]</tw-passagedata><tw-passagedata pid="63" name="we found a way to recreate a broth" tags="message" position="1906,652" size="100,100"># Correct approach!
 
 You earn +1 in knowledge:
@@ -1017,7 +1052,7 @@ You earn +1 in knowledge:
 
 Take note of it! You will need it later.
 
-Now let&#39;s [[go to the kitchen]]!</tw-passagedata><tw-passagedata pid="64" name="Hey, wait." tags="" position="1230,1031.3333333333333" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+Now let&#39;s [[go to the kitchen]]!</tw-passagedata><tw-passagedata pid="64" name="Hey, wait." tags="" position="1230,1031" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
 (if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
 
@@ -1029,7 +1064,7 @@ She checks.
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;Probably evaporated as a result of the solar flare&quot;&lt;/span&gt; she says.
 
-&lt;span class=&quot;dialogue&quot;&gt;&quot;If we could [[identify-&gt;Find out the missing component]] the missing component, we could replace it&quot;&lt;/span&gt;, Alix continues.</tw-passagedata><tw-passagedata pid="65" name="Tell Kev the temperature" tags="message" position="2156.9999999999995,655.3333333333333" size="100,100">(if: $ferment_temp is &quot;12&quot;)[
+&lt;span class=&quot;dialogue&quot;&gt;&quot;If we could [[identify-&gt;Find out the missing component]] the missing component, we could replace it&quot;&lt;/span&gt;, Alix continues.</tw-passagedata><tw-passagedata pid="65" name="Tell Kev the temperature" tags="message" position="2152.6666666666665,658.3333333333334" size="100,100">(if: $ferment_temp is &quot;12&quot;)[
 &lt;br&gt;
 &lt;br&gt;
 # Correct answer!
@@ -1045,7 +1080,11 @@ Take note of it! You will need it later.
 
 (if: $ferment_temp is not &quot;12&quot;)[&lt;span class=&quot;dialogue-bg&quot;&gt;&quot;Nop, I&#39;m sure $ferment_temp degree celsius is not the right temperature&quot;&lt;/span&gt;, responds Kev 
 &lt;br&gt;
-[[try again! -&gt;make the starter]]]</tw-passagedata><tw-passagedata pid="66" name="fermentation" tags="" position="2202.6666666666674,938.6666666666667" size="100,100">&lt;span class=&quot;dialogue&quot;&gt;&quot;Ok, now we have to find a place which roughly has $ferment_temp degree celsius.  &lt;/span&gt;, says Kev &lt;span class=&quot;dialogue&quot;&gt; &quot;Hm.. the temperature in the tunnel should be quite right! Let&#39;s go there and [[set up the fermentation]] bottle.&quot; &lt;/span&gt;</tw-passagedata><tw-passagedata pid="67" name="set up the fermentation" tags="tunnel" position="2054.3333333333335,1053.6666666666667" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+[[try again! -&gt;make the starter]]]</tw-passagedata><tw-passagedata pid="66" name="fermentation" tags="fermentor-room" position="2202,938" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+&lt;span class=&quot;dialogue&quot;&gt;&quot;Ok, now we have to find a place which roughly has $ferment_temp degree celsius. &lt;/span&gt;, says Kev &lt;
+
+span class=&quot;dialogue&quot;&gt; &quot;Hm.. the temperature in the tunnel should be quite right! Let&#39;s go there and [[set up the fermentation]] bottle.&quot; &lt;/span&gt;</tw-passagedata><tw-passagedata pid="67" name="set up the fermentation" tags="tunnel" position="2054,1053" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 (if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
 (live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/tunnel.mp3&quot; autoplay loop&gt;]
 
