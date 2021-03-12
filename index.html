@@ -174,7 +174,7 @@ It is much easier and faster to build, fix or customize equipment.
 &lt;span class=&quot;dialogue&quot;&gt;&quot;Hey Amos... What&#39;s going on here?&quot;&lt;/span&gt;, [[you ask]].
 ]
 
-&lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/chatternoise.mp3&quot; autoplay&gt;
+&lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/chatternoise_low.mp3&quot; autoplay&gt;
 </tw-passagedata><tw-passagedata pid="3" name="read message 1" tags="message" position="467,491" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
 (if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
@@ -524,7 +524,9 @@ Everyone nods. Some colonists start laughing, relieved.
 
 ### What a day. 
 
-You decide to go back to your tent and [[take a nap]], before the two suns rise again.</tw-passagedata><tw-passagedata pid="21" name="take a nap" tags="surface" position="2061,1334" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+You decide to go back to your tent and [[take a nap]], before the two suns rise again.
+
+&lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/chatternoise_low.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="21" name="take a nap" tags="surface" position="2061,1334" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
 (if: (history:) does not contain $currentpassage)[(enchant: ?mars&#39;s lines, via (t8n-delay:pos * 1200) + (t8n:&#39;instant&#39;) + (bg:black))]
 (else:)[(enchant: ?mars&#39;s lines, via (bg:black))]
@@ -791,7 +793,7 @@ He walks towards one of the gates in the bascamp.
 
 [[follow Kev]]
 &lt;span class=&quot;dialogue&quot;&gt; “Ahh... sorry Kev. I changed my mind. Amos, what were the other [[options]] again”? &lt;/span&gt;]]
-</tw-passagedata><tw-passagedata pid="39" name="Credits" tags="" position="2682,1323" size="100,100">&lt;a href=&quot;http://freesound.org/people/qubodup/sounds/238954&quot;&gt;Game Over&lt;/a&gt; by &lt;a href=&quot;http://freesound.org/people/qubodup&quot;&gt;Iwan Gabovitch&lt;/a&gt; under &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/legalcode&quot;&gt;CC-BY 3.0 License&lt;/a&gt;
+&lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/chatternoise_low.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="39" name="Credits" tags="" position="2682,1323" size="100,100">&lt;a href=&quot;http://freesound.org/people/qubodup/sounds/238954&quot;&gt;Game Over&lt;/a&gt; by &lt;a href=&quot;http://freesound.org/people/qubodup&quot;&gt;Iwan Gabovitch&lt;/a&gt; under &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/legalcode&quot;&gt;CC-BY 3.0 License&lt;/a&gt;
 
 &quot;Cat, Screaming, A.wav&quot; by InspectorJ (www.jshaw.co.uk) of Freesound.org</tw-passagedata><tw-passagedata pid="40" name="Share the news!" tags="basecamp" position="2442,1334" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
@@ -994,7 +996,8 @@ Check the [[small case]]
 |primero&gt;[There is a sticky note on the case with the lock saying. &quot;Reminder to myself: What&#39;s the founding year of the place where you learned the art of brewing? Remember the number of the inoffical lecture hall we always visited last?&quot;
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;Huh, seems like Gilbert was a bit forgetful. Good for us he left some hints for the lock code! &quot;&lt;/span&gt;, says Kev &lt;span class=&quot;dialogue&quot;&gt;&quot;But I have no clue what the numbers are ... From my exchange semester in Germany I remember that &quot;lecture hall&quot; is &quot;Hörsaal&quot; in german. Don&#39;t ask me why... &quot;&lt;/span&gt;]
-(live: 13s)[(stop:)|next2&gt;[&#39;&#39;He looks at you.&#39;&#39;]]
+(if: (history:) does not contain $currentpassage)[(live: 13s)[(stop:)|next2&gt;[&#39;&#39;He looks at you.&#39;&#39;]]]
+(unless: (history:) does not contain $currentpassage)[(live: 0s)[(stop:)|next2&gt;[&#39;&#39;He looks at you.&#39;&#39;]]]
 
 (if:$code_entered)[
 &lt;span class=&quot;dialogue&quot;&gt;&quot;Hm. Maybe we should look in the [[notebook]] for some more hints&quot; &lt;/span&gt;, says Kev.
@@ -1010,7 +1013,8 @@ Check the [[small case]]
 
 ]
 
-</tw-passagedata><tw-passagedata pid="54" name="photo of entrance" tags="notebook" position="1892,310" size="100,100">&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/brew_entrance.jpg&quot;&gt;
+</tw-passagedata><tw-passagedata pid="54" name="photo of entrance" tags="notebook" position="1892,310" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/brew_entrance.jpg&quot;&gt;
 (unless: (history:) does not contain $currentpassage)[
 Do you need a |hint&gt;[hint]
 (click-append: ?hint)[
@@ -1038,7 +1042,10 @@ You open the small case and find a smart device which is commonly used to browse
 
 Take a look at &lt;a href=&quot;https://ohwmakers.github.io/treasure-hunt/assets/wikiHow-netuk.html#&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;the cached webpage&lt;/a&gt;
 
-[[show it to Kev]]</tw-passagedata><tw-passagedata pid="58" name="put this into the fermenter" tags="fermenter" position="1486,566" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+Now you know the solution you need:
+(dropdown: 2bind $solution, &quot;Malt&quot;,&quot;Malt extract&quot;,&quot;Onions&quot;,&quot;Potatoes&quot;,&quot;Flour&quot;,&quot;More Time&quot;)
+
+[[tell Kev]]</tw-passagedata><tw-passagedata pid="58" name="put this into the fermenter" tags="fermenter" position="1486,566" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 (if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 (live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
 
@@ -1051,7 +1058,7 @@ Silence.
 
 &lt;span class=&quot;dialogue&quot;&gt; &quot;Well, we have one last try with the culture stocks. We should really look for something the brew master documented. We have to be sure that it works! Let&#39;s [[find the recipe]]&quot; &lt;/span&gt;
 ]]
-</tw-passagedata><tw-passagedata pid="59" name="show it to Kev" tags="fermentor-room" position="1891,772" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+</tw-passagedata><tw-passagedata pid="59" name="show it to Kev" tags="fermentor-room" position="1871,828.6666666666666" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 (if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 (live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
 
@@ -1063,9 +1070,11 @@ You can convice the cook to create a broth out of potatoes for you. You take a h
 (if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 (live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
 
-When you are back in the fermenter room again kev says &lt;span class=&quot;dialogue&quot;&gt; &quot;Well, I guess it is better to make a netuk starter from the stocks in the thawing freezer. We don&#39;t know if the remains in the fermentor got already contaminated while we took so long to find a recipe.&quot; &lt;/span&gt;, he walks to one of the big fermentation bottles the brew master usually uses to test recipe varieties in a small batch.  
+When you are back in the fermenter room again kev says &lt;span class=&quot;dialogue&quot;&gt; &quot;Well, I guess it is better to make a netuk starter from the stocks in the thawing freezer. We don&#39;t know if the remains in the fermentor got already contaminated while we took so long to find a recipe.&quot; &lt;/span&gt;
+He walks to one of the big fermentation bottles the brew master usually uses to test recipe varieties in a small batch.  
 &lt;span class=&quot;dialogue&quot;&gt; &quot;We can use this to [[make the starter]]!&quot; &lt;/span&gt;</tw-passagedata><tw-passagedata pid="62" name="make the starter" tags="fermentor-room" position="2115,778" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 (if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
+(live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
 
 Together with Kev&#39;s help you fill the potato broth into the huge bottle and add the content of one thawed stock vials.
 
@@ -1146,7 +1155,12 @@ You press the button at the side of the door. It opens with a wooosh sound.
 [[Back-&gt;notebook]]
 (set: $beer1 to true)</tw-passagedata><tw-passagedata pid="70" name="photo of a building" tags="notebook" position="1364.3333333333333,116.66666666666666" size="100,100">&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/beer3.jpg&quot;&gt;
 [[Back-&gt;notebook]]
-(set: $beer3 to true)</tw-passagedata></tw-storydata>
+(set: $beer3 to true)</tw-passagedata><tw-passagedata pid="71" name="tell Kev" tags="fermentor-room" position="1767.3333333333335,947" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
+(live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
+
+(if:$solution is &quot;Potatoes&quot;)[Correct! Let&#39;s [[show it to Kev]]!]
+(if:$solution is not &quot;Potatoes&quot;)[Wrong! [[Try again! -&gt;open the case]]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
