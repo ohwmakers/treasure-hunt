@@ -265,7 +265,7 @@ Worried looks appear beneath the colonists&#39; helmets.]
 In silence, Amos evaluates the [[options]].
 ]]
 
-</tw-passagedata><tw-passagedata pid="7" name="radio" tags="reinventing-wheel radio" position="838,551" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+&lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/chatternoise_low.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="7" name="radio" tags="reinventing-wheel radio" position="838,551" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
 (if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
@@ -592,7 +592,7 @@ One of them is in a red case, the code for URGENT MESSAGE.
 (text-style:&quot;sway&quot;)[[read message 3]]
 
 
-&lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/chatternoise.mp3&quot; autoplay&gt;
+&lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/chatternoise_low.mp3&quot; autoplay&gt;
 </tw-passagedata><tw-passagedata pid="25" name="&quot;NOTHING?!&quot;" tags="radio" position="741,894" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
 (if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
@@ -636,7 +636,7 @@ The mechanism is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Pneumatic_tube
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;It&#39;s [[fixed-&gt;Look, there]]&quot;&lt;/span&gt;, says Amos, and distracts you from your day-dreaming. 
 
-&lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/chatternoise.mp3&quot; autoplay&gt;
+&lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/chatternoise_low.mp3&quot; autoplay&gt;
 </tw-passagedata><tw-passagedata pid="28" name="options" tags="basecamp" position="1010,295" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
 (if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
@@ -655,7 +655,9 @@ Finally, Amos speaks.
 
 * (text-colour:black)+(background:#c0eb75)[[Join Alix and follow her to the comms tent-&gt;radio]]
 * (text-colour:black)+(background:#fcc2d7)[[Join Kev and follow him to the fermenter building]]
-]</tw-passagedata><tw-passagedata pid="29" name="&quot;Weird&quot;" tags="stars" position="184,289" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+]
+
+&lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/chatternoise_low.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="29" name="&quot;Weird&quot;" tags="stars" position="184,289" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
 (if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 (else:)[(enchant: ?passage&#39;s chars, via (background:black))]
@@ -722,7 +724,7 @@ Your eyes move from Amos&#39; favourite mug to his red ears.
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;Ehm... Let&#39;s [[gather everyone-&gt;base camp]]&quot;&lt;/span&gt;, he ignores you. 
 
-&lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/chatternoise.mp3&quot; autoplay&gt;
+&lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/chatternoise_low.mp3&quot; autoplay&gt;
 </tw-passagedata><tw-passagedata pid="34" name="You connect the wire" tags="Dead-end" position="1058,965" size="100,100">(transition: &quot;pulse&quot;) +(transition-time: 5s)[# BOOM!] 
 
 |boom&gt;[&lt;span class=&quot;dialogue&quot;&gt;All power goes out in the dome. &lt;br&gt; &lt;br&gt;You are both reassigned to manually cleaning the colony sewage system, for the rest of the week.&lt;/span&gt;
@@ -987,6 +989,7 @@ Check the [[small case]]
 ]]
 </tw-passagedata><tw-passagedata pid="53" name="small case" tags="fermentor-room" position="1636,796" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 (if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
+(live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
 
 |primero&gt;[There is a sticky note on the case with the lock saying. &quot;Reminder to myself: What&#39;s the founding year of the place where you learned the art of brewing? Remember the number of the inoffical lecture hall we always visited last?&quot;
 
@@ -1012,7 +1015,7 @@ Check the [[small case]]
 Do you need a |hint&gt;[hint]
 (click-append: ?hint)[
 &lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/brew_entrance_hint.jpg&quot; width=&quot;90%&quot;&gt;
-]
+]]
 
 [[Back-&gt;notebook]]
 (set: $door_photo to true)</tw-passagedata><tw-passagedata pid="55" name="photo of food" tags="notebook" position="1553.3333333333333,105" size="100,100">&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/beer2.jpg&quot;&gt;
