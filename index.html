@@ -140,7 +140,7 @@ color:  #a61e4d;
 (set: $code_entered to false)
 (set: $visited to false)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 40) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
 
 
 
@@ -152,14 +152,14 @@ You wake up wondering why the alarm clock didn&#39;t ring.
 
 </tw-passagedata><tw-passagedata pid="2" name="make your way" tags="basecamp" position="311,290" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?first&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?first&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 
 |first&gt;[The main tent looks like a disturbed ant hill.
 
 You manage to find //&#39;&#39;Amos&#39;&#39;//, chief mechanical engineer.
 
-In the year 2171 Amos&#39; work is easier: all equipment is] (live: 7s)[(stop:)|ohw&gt;[open source hardware.]]
+In the year 2171 Amos&#39; work is easier: all equipment is] (live: 4s)[(stop:)|ohw&gt;[open source hardware.]]
 
 (click-append: ?ohw)[(text-colour: #d8f5a2)[&lt;br&gt;This means anyone at camp can access the designs of any machine in use.
 
@@ -167,7 +167,7 @@ It is much easier and faster to build, fix or customize equipment.
 
 &#39;&#39;Isn&#39;t that great!?&#39;&#39; Can you imagine how it was in the 21st century, with all those patents and restrictions?!]]
 
-(live: 8s)[(stop:)|second&gt;[Of course you still need skilled people to make everything work.]
+(live: 5s)[(stop:)|second&gt;[Of course you still need skilled people to make everything work.]
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;Hey Amos... What&#39;s going on here?&quot;&lt;/span&gt;, [[you ask]].
 ]
@@ -175,7 +175,7 @@ It is much easier and faster to build, fix or customize equipment.
 &lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/chatternoise.mp3&quot; autoplay&gt;
 </tw-passagedata><tw-passagedata pid="3" name="read message 1" tags="message" position="467,491" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 You open the tube, and unroll the message inside.
 &lt;br&gt;
@@ -195,7 +195,7 @@ After all, you grew fond of the tiny cleaning robots, they are cute.
 
 [[Go back-&gt;Look, there]]</tw-passagedata><tw-passagedata pid="4" name="read message 2" tags="message" position="618,518" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 You open the tube, and unroll the message inside.
 
@@ -218,7 +218,7 @@ Lost &amp; Found service.&lt;/span&gt;
 
 [[Go back-&gt;Look, there]]</tw-passagedata><tw-passagedata pid="5" name="read message 3" tags="message" position="650,272" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 You open the red case, and unroll the message inside.
 &lt;br&gt;
@@ -239,7 +239,7 @@ PS: TURN OFF YOUR ELECTRONICS
 
 [[&quot;Oops&quot;]]</tw-passagedata><tw-passagedata pid="6" name="base camp" tags="basecamp" position="890,287" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?one&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?one&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 |one&gt;[All the eyes in the camp are on Amos.
 
@@ -250,7 +250,7 @@ PS: TURN OFF YOUR ELECTRONICS
 Worried looks appear beneath the colonists&#39; helmets.]
 
 
-(live: 12s)[(stop:)|next&gt;[(text-colour: orange)[&quot;We need a plan&quot;, someone shouts from the back.]]
+(live: 7s)[(stop:)|next&gt;[(text-colour: orange)[&quot;We need a plan&quot;, someone shouts from the back.]]
 
 (mouseover-append: ?next)[
 
@@ -263,9 +263,9 @@ Worried looks appear beneath the colonists&#39; helmets.]
 In silence, Amos evaluates the [[options]].
 ]]
 
-</tw-passagedata><tw-passagedata pid="7" name="radio" tags="reinventing-wheel radio" position="863,551" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+</tw-passagedata><tw-passagedata pid="7" name="radio" tags="reinventing-wheel radio" position="838,551" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 The solar flare had no mercy with the camp&#39;s main radio station. Circuits are fried, and a horrible smell floats around the comms camp.
 
@@ -280,7 +280,7 @@ She looks truly determined.
 [[You take a minute]] 
 </tw-passagedata><tw-passagedata pid="8" name="take a look" tags="message" position="2184,1337" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?type&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?type&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 |type&gt;[The sticky material has some words printed on it... In fact, it is a note!
 &lt;br&gt;
@@ -302,7 +302,7 @@ ghe&#39;naQ luchenmoHmeH yaghmey &#39;eb luchenmoHlaH &#39;ej, jIHvaD DablaHbe&#
 
 </tw-passagedata><tw-passagedata pid="9" name="keyword" tags="message" position="2313,1337" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 &lt;span class=&quot;papyrus&quot;&gt;
 ## We salute you, stranger!
@@ -319,7 +319,7 @@ You have to promise that you will share the lesson, as we also received it from 
 
 [[Share the news!]]</tw-passagedata><tw-passagedata pid="10" name="Follow her" tags="radio" position="853,698" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 Alix grabs a board and starts describing how blockchain can make radio even more amazing at the camp.
 
@@ -328,9 +328,9 @@ You recognize she has a point, it looks like a promising system.
 But soon you start getting lost in the jargon...
 
 You are starting to regret joining her, when you find a [[paper-&gt;puzzle]] in the floor.
-</tw-passagedata><tw-passagedata pid="11" name="You take a minute" tags="radio" position="983,641" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+</tw-passagedata><tw-passagedata pid="11" name="You take a minute" tags="radio" position="958,641" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?sectiona&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?sectiona&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 |sectiona&gt;[You take a minute to think, while Alix is still at the board drawing.
 
@@ -342,7 +342,7 @@ If all the tools used in the terraforming colonies are open source...
 
 &lt;span class=&quot;dialogue&quot;&gt;“Hey Alix, can we look for the documentation?&quot;&lt;/span&gt;, you ask. She rolls her eyes but agrees to help.
 
-She shows you: &lt;span class=&quot;dialogue&quot;&gt;&quot;Do you mean this one with the big label... &lt;/span&gt;](live:15s)[(stop:)|radiodoc&gt;[
+She shows you: &lt;span class=&quot;dialogue&quot;&gt;&quot;Do you mean this one with the big label... &lt;/span&gt;](live:8s)[(stop:)|radiodoc&gt;[
 (text-colour:#343a40)+(background:#d8f5a2)[[RADIO INSTRUCTIONS-&gt;Open the radio docs]]]?]
 
 
@@ -350,11 +350,11 @@ She shows you: &lt;span class=&quot;dialogue&quot;&gt;&quot;Do you mean this one
 
 </tw-passagedata><tw-passagedata pid="12" name="puzzle" tags="fails radio" position="723,770" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?section1&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?section1&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 |section1&gt;[&lt;span class=&quot;dialogue&quot;&gt;&quot;Weird&quot;&lt;/span&gt;, you think to yourself while Alix keeps talking... &lt;span class=&quot;dialogue&quot;&gt;&quot;We don&#39;t produce paper at LDV&quot;&lt;/span&gt;.]
 
-(live: 5s)[(stop:)|msg1&gt;[You unroll the paper]]
+(live: 3s)[(stop:)|msg1&gt;[You unroll the paper]]
 
 (click-replace: ?msg1)[
 It has orange cat hair all over it. 
@@ -375,13 +375,13 @@ You grab a pen and paper, and decipher the message.
 
 (input-box:2bind $riddleWheel,&quot;=XX=&quot;, 1)
 [[Check it!-&gt;Wheel-riddle]]
-]</tw-passagedata><tw-passagedata pid="13" name="Open the radio docs" tags="assembly-instructions radio" position="1103,726" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+]</tw-passagedata><tw-passagedata pid="13" name="Open the radio docs" tags="assembly-instructions radio" position="1078,718" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?read&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?read&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 |read&gt;[You start reading the docs.
 &lt;br&gt;
-(font: &quot;monospace&quot;)+(background: #c5f6fa)+(text-colour:black)[&quot;All equipment for radio communication in the colonies is based on a pioneer model designed by Earth&#39;s 20th century maker, &lt;a href=&quot;https://en.wikipedia.org/wiki/Hanso_Idzerda&quot;&gt;Hans Idzerda&lt;/a&gt;&quot;.&lt;br&gt;]
+(font: &quot;monospace&quot;)+(background: #c5f6fa)+(text-colour:black)[&quot;All equipment for radio communication in the colonies is based on a pioneer model designed by Earth&#39;s 20th century maker, &lt;a href=&quot;https://en.wikipedia.org/wiki/Hanso_Idzerda&quot;,target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Hans Idzerda&lt;/a&gt;&quot;.&lt;br&gt;]
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;Interesting...&quot;&lt;/span&gt;
 
@@ -393,7 +393,7 @@ You grab a pen and paper, and decipher the message.
 
 (click: &quot;assembly instructions&quot;)[&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/radio-instructions.png&quot;&gt;]]
 
-(live: 14s)[(stop:)|action&gt;[Alix is already grabbing a screwdriver and opening the radio.]
+(live: 8s)[(stop:)|action&gt;[Alix is already grabbing a screwdriver and opening the radio.]
 
 &lt;span class=&quot;dialogue&quot;&gt;&#39;&#39;“Where do we start?”&lt;/span&gt;, she asks you.&#39;&#39;
 
@@ -402,7 +402,7 @@ You grab a pen and paper, and decipher the message.
 [[Boring!... Let&#39;s open it.-&gt;Boring!]]
 ]</tw-passagedata><tw-passagedata pid="14" name="instructions" tags="radio" position="1213,861" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?sectiond&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?sectiond&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 (text-colour:#212529)+(background:#c5f6fa)[&quot;This radio is designed in a modular way. Its components can be mixed and matched, as they are able to connect and interact through our new standardized interface.&quot;]
 
@@ -416,7 +416,7 @@ You grab a pen and paper, and decipher the message.
 ]
 </tw-passagedata><tw-passagedata pid="15" name="Boring!" tags="radio" position="993,838" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;There&#39;s a loose red wire here that goes nowhere&quot;&lt;/span&gt;, says Alix
 
@@ -440,14 +440,14 @@ You find a post-it sticking out of the docs. It reads:
 
 //&quot;What does that mean!?&quot;// Alix wonders. //&quot;Looks like an encoded message...&quot;//
 
-It reminds you of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Telegraphy#Terminology&quot; target=&quot;_blank&quot;&gt;notes&lt;/a&gt; from your great great great grandma notebook. She was a &lt;a href=&quot;http://www.arrl.org/what-is-ham-radio&quot; target=&quot;_blank&quot;&gt;ham radio&lt;/a&gt; lover. 
+It reminds you of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Telegraphy#Terminology&quot;,target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;notes&lt;/a&gt; from your great great great grandma notebook. She was a &lt;a href=&quot;http://www.arrl.org/what-is-ham-radio&quot;, target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;ham radio&lt;/a&gt; lover. 
 
 Your answer:
 (input-box:2bind $riddleMorse,&quot;=XX=&quot;, 1)
 [[Check it!-&gt;Morse-riddle]]
 </tw-passagedata><tw-passagedata pid="17" name="Yay! we found it" tags="BoM radio" position="1443,1241" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?sectionf&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?sectionf&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 (font: &quot;monospace&quot;)+(background: #c5f6fa)+(text-colour:black)[&quot;This radio needs 4 HRR components to work&quot;]|sectionf&gt;[, you read.
 
@@ -459,7 +459,7 @@ Your answer:
 
 </tw-passagedata><tw-passagedata pid="18" name="footnote" tags="Modularity message" position="1568,1332" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 &lt;span class=&quot;papyrus&quot;&gt;&quot;An accessible replacement for HRR components can be found in (text-style:&quot;double-strike&quot;)[solve the riddle first]&quot;&lt;/span&gt;
 
@@ -477,7 +477,7 @@ Your answer:
 [[Solve the riddle]]
 </tw-passagedata><tw-passagedata pid="19" name="Replace components" tags="radio" position="1818,1337" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?anothersection&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?anothersection&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 (font: &quot;monospace&quot;)+(background: #c5f6fa)+(text-colour:black)[&quot;An accessible replacement for HRR components can be found in any camp kitchen.&quot;]
 
@@ -485,7 +485,7 @@ Your answer:
 
 (font: &quot;monospace&quot;)+(background: #c5f6fa)+(text-colour:black)[&quot;Just make sure you replace them every 3 Earth months to avoid bad smell.&quot;]
 
-(live: 4s)[(stop:)|anothersection&gt;[
+(live: 3s)[(stop:)|anothersection&gt;[
 ##&lt;span class=&quot;dialogue&quot;&gt;&#39;&#39;&quot;BLUE BERRIES?!&quot;&#39;&#39;&lt;/span&gt; 
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;I honestly can&#39;t believe this&quot;&lt;/span&gt;, says Alix.
@@ -510,7 +510,7 @@ She looks at you.
 
 </tw-passagedata><tw-passagedata pid="20" name="Run to camp" tags="basecamp" position="1944,1335" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 All main services are back! Everyone cheers you at the base camp.
 
@@ -545,7 +545,7 @@ What do you do?
 ]
 </tw-passagedata><tw-passagedata pid="22" name="Get your prize!" tags="stars" position="2557,1331" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 ## You finished the game :D
 
@@ -555,12 +555,12 @@ Open Hardware Makers is an online mentorship program that supports hardware proj
 
 (text-colour:#d0bfff)[Leave us your details &lt;a href=&quot;&quot;&gt;here&lt;/a&gt; so we can send you a prize.]
 (box:&quot;===XX&quot;)[[[Go back to the Start-&gt;Start]]]
-</tw-passagedata><tw-passagedata pid="23" name="something" tags="stars" position="54,352" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+</tw-passagedata><tw-passagedata pid="23" name="something" tags="stars" position="54,350.3333333333333" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
 (if: (history:) does not contain $currentpassage)[
-(enchant-in: ?delay&#39;s chars, via (t8n-delay:pos * 60) + (t8n:&#39;instant&#39;))|delay&gt;[You walk towards the beverages replicator. 
+(enchant-in: ?delay&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))|delay&gt;[You walk towards the beverages replicator. 
 
-You really need some...]] (live: 4s)[(stop:)|cocoa&gt;[Hot cocoa-based drink.]]
+You really need some...]] (live: 2s)[(stop:)|cocoa&gt;[Hot cocoa-based drink.]]
 
 (click-append: ?cocoa)[
 (text-style:&quot;buoy&quot;)+(text-colour:yellow)+(align:&quot;=&gt;&lt;=&quot;)[&lt;br&gt;
@@ -573,7 +573,7 @@ OUT OF ORDER
 
 &lt;span class=&quot;dialogue&quot;&gt;[[Maybe not?-&gt;&quot;Weird&quot;]]&lt;/span&gt;]</tw-passagedata><tw-passagedata pid="24" name="Look, there" tags="basecamp" position="535,266" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 With a dry noise, three packages fall on the floor.
 
@@ -592,7 +592,7 @@ One of them is in a red case, the code for URGENT MESSAGE.
 
 </tw-passagedata><tw-passagedata pid="25" name="&quot;NOTHING?!&quot;" tags="radio" position="741,894" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 You share the message with Alix.
 
@@ -607,9 +607,9 @@ He looks at both of you: &lt;span class=&quot;dialogue&quot;&gt;&quot;Have you m
 [[Alix&#39;s face turns red...]]
 </tw-passagedata><tw-passagedata pid="26" name="late" tags="stars" position="20,203" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 40) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
-It&#39;s the year (text-style:&quot;mark&quot;)[2171]. We are in the &lt;a href=&quot;https://en.wikipedia.org/wiki/Albireo&quot;&gt;β Cygni system&lt;/a&gt;. 
+It&#39;s the year (text-style:&quot;mark&quot;)[2171]. We are in the &lt;a href=&quot;https://en.wikipedia.org/wiki/Albireo&quot;, target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;β Cygni system&lt;/a&gt;. 
 
 Here in the LDV planet, colonists get up and start working way before sunrise(s). 
 
@@ -619,7 +619,7 @@ You get out of your dome bed (text-style:&quot;expand&quot;)[slowly].
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;I need [[something]] to wake me up&quot;&lt;/span&gt; </tw-passagedata><tw-passagedata pid="27" name="you ask" tags="basecamp" position="421,291" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;I&#39;m fixing the mail, something is stuck in there&quot;&lt;/span&gt;, Amos growls.
 
@@ -629,12 +629,12 @@ You get out of your dome bed (text-style:&quot;expand&quot;)[slowly].
 
 You take a look at the camp&#39;s main mailing system. It has always fascinated you.
 &lt;br&gt;
-The mechanism is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Pneumatic_tube&quot;&gt;relic from the early 20th century&lt;/a&gt;, and it still works. Just compressed air, and physics.
+The mechanism is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Pneumatic_tube&quot;,target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;relic from the early 20th century&lt;/a&gt;, and it still works. Just compressed air, and physics.
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;It&#39;s [[fixed-&gt;Look, there]]&quot;&lt;/span&gt;, says Amos, and distracts you from your day-dreaming. 
 </tw-passagedata><tw-passagedata pid="28" name="options" tags="basecamp" position="1010,295" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 |primero&gt;[A long, uncomfortable silence stays in the base camp.
 
@@ -652,7 +652,7 @@ Finally, Amos speaks.
 * (text-colour:black)+(background:#fcc2d7)[[Join Kev and follow him to the fermentor building]]
 ]</tw-passagedata><tw-passagedata pid="29" name="&quot;Weird&quot;" tags="stars" position="184,289" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 60) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 (else:)[(enchant: ?passage&#39;s chars, via (background:black))]
 
 Noises outside of your tent call your attention. 
@@ -666,7 +666,7 @@ You get into your suit, take a sip from your bottle of netuk to protect you from
 &lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/chatternoise.mp3&quot; autoplay&gt;
 </tw-passagedata><tw-passagedata pid="30" name="Throw it away" tags="Dead-end" position="1905,1521" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 (align:&quot;=&gt;&lt;=&quot;)[(transition: &quot;pulse&quot;) +(transition-time: 5s)[## OUCH!!]] 
 
@@ -680,7 +680,7 @@ Remember: at LDV, you don&#39;t throw anything away. You take it to the recyclin
 
 &lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/cat.wav&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="31" name="Call Amos" tags="Dead-end" position="2038,1520" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 (align:&quot;=&gt;&lt;=&quot;)[(transition: &quot;pulse&quot;) +(transition-time: 5s)[## MORE WORK?!]] 
 
@@ -695,15 +695,15 @@ Remember: at LDV, you don&#39;t throw anything away. You take it to the recyclin
 
 |toilet&gt;[&lt;br&gt;&lt;span class=&quot;dialogue&quot;&gt;You are both reassigned to manually cleaning the colony sewage system, for the rest of the week.&lt;/span&gt;]
 
-(live: 4s)[(stop:)[[Go back-&gt;radio]]]
+(live: 3s)[(stop:)[[Go back-&gt;radio]]]
 
 (set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?toilet&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?toilet&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 &lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/gameover.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="33" name="&quot;Oops&quot;" tags="basecamp" position="763,289" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 
 You take a look at Amos, and pass him the message.
@@ -714,7 +714,7 @@ You take a look at Amos, and pass him the message.
 
 Your eyes move from Amos&#39; favourite mug to his red ears.
 
-(live: 9s)[(stop:)&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/mug.jpg&quot; width=20%&gt;]
+(live: 5s)[(stop:)&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/mug.jpg&quot; width=20%&gt;]
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;Ehm... Let&#39;s [[gather everyone-&gt;base camp]]&quot;&lt;/span&gt;, he ignores you. 
 
@@ -726,12 +726,12 @@ Your eyes move from Amos&#39; favourite mug to his red ears.
 
 (set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?boom&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?boom&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 &lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/powerdown.mp3&quot; autoplay&gt;
 </tw-passagedata><tw-passagedata pid="35" name="Solve the riddle" tags="message" position="1704,1335" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 ### INSTRUCTIONS
 
@@ -750,7 +750,7 @@ Your eyes move from Amos&#39; favourite mug to his red ears.
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXXXXXX=&quot;)[Your answer:] [(input-box:2bind $riddleMarconi,&quot;=XX=&quot;, 1)]
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=XXXXXXXX=&quot;)[[[Check it!-&gt;check-marconi]]]</tw-passagedata><tw-passagedata pid="36" name="nop" tags="Dead-end" position="2290,1588" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 &lt;snap class=&quot;darkshade&quot;&gt;You are either too young, or you don&#39;t like science fiction. 
 
@@ -760,7 +760,7 @@ We hope it&#39;s the first one!&lt;/snap&gt;
 
 &lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/worf.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="37" name="nop2" tags="Dead-end" position="2165,1590" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 &lt;snap class=&quot;darkshade&quot;&gt;You are either too young, or you don&#39;t like science fiction. 
 
@@ -770,7 +770,7 @@ We hope it&#39;s the first one!&lt;/snap&gt;
 
 &lt;audio src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/worf.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="38" name="Join Kev and follow him to the fermentor building" tags="basecamp" position="1129,437" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 Kev smiles at you:
 
@@ -778,7 +778,7 @@ Kev smiles at you:
 
 He points at a building in the distance.]
 
-(live: 4s)[(stop:)|primero&gt;[&lt;span class=&quot;dialogue&quot;&gt; “That’s where the netuk fermentor and all the other machines are located. Luckily it got just recently connected to the tunnel system of the base camp, so we don’t need to go outside. It will be a long walk though…” &lt;/span&gt;
+(live: 2s)[(stop:)|primero&gt;[&lt;span class=&quot;dialogue&quot;&gt; “That’s where the netuk fermentor and all the other machines are located. Luckily it got just recently connected to the tunnel system of the base camp, so we don’t need to go outside. It will be a long walk though…” &lt;/span&gt;
 
 He walks towards one of the gates in the bascamp.
 
@@ -788,7 +788,7 @@ He walks towards one of the gates in the bascamp.
 
 &quot;Cat, Screaming, A.wav&quot; by InspectorJ (www.jshaw.co.uk) of Freesound.org</tw-passagedata><tw-passagedata pid="40" name="Share the news!" tags="basecamp" position="2442,1334" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 (align:&quot;=&gt;&lt;=&quot;)[(transition: &quot;pulse&quot;) +(transition-time: 5s)[## BRAVO!!]] 
 
@@ -854,7 +854,7 @@ Take note of it! You will need it later.
 (if: (lowercase: $riddleWheel) is not &quot;do not try to reinvent the wheel better collaborate&quot;)[Nop, [[Try again-&gt;puzzle]]]
 </tw-passagedata><tw-passagedata pid="44" name="follow Kev" tags="tunnel" position="1180,587" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 (live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/tunnel.mp3&quot; autoplay loop&gt;]
 
@@ -864,19 +864,15 @@ Take note of it! You will need it later.
 
 &lt;span class=&quot;dialogue&quot;&gt; ”We are really unlucky. The brew master just left the colony two days ago to maintain the machines at the other colony. I wonder if they were as badly hit by the solar fair as we.” &lt;/span&gt;, Kev pauses.
 
-&lt;span class=&quot;dialogue&quot;&gt; ”Just when he left he said that all machines are set up and we should be alright for the next month… How iconic… He wanted to come back in a week to check the netuk fermentation.” &lt;/span&gt;]
+&lt;span class=&quot;dialogue&quot;&gt; ”Just when he left he said that all machines are set up and we should be alright for the next month… How iconic… He wanted to come back in a week to check the netuk fermentation.” &lt;/span&gt;
+You continue your walk in silence ...]
 
-(live: 2s)[(stop:)|primero&gt;[ &lt;span class=&quot;dialogue&quot;&gt; ”Ah finally! Here is the entrance to the fermentor room” &lt;/span&gt;
+(live: 5s)[(stop:)|primero&gt;[&lt;span class=&quot;dialogue&quot;&gt; ”Ah finally! Here is the entrance to the fermentor room” &lt;/span&gt;
 
-Kev presses a button at the side of the door. It opens with a wooosh sound. 
-
-(live: 27s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/woosh.mp3&quot; autoplay&gt;]
-
-&lt;span class=&quot;dialogue&quot;&gt; ”Ahh, still works. Good old hydraulics. Not many electronics in there to be destroyed by a solar fair.” &lt;/span&gt;]]
-
-(live: 36s)[(stop:)|next2&gt;[ [[Enter the fermenter room]] ]]
+Press the &quot;[[OPEN]]&quot; button next to the door
+]]
 </tw-passagedata><tw-passagedata pid="45" name="Enter the fermenter room" tags="fermentor-room" position="1303,695" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
-(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 (live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
 
 |primero&gt;[Kev says:&lt;/span&gt; &lt;span class=&quot;dialogue&quot;&gt; “Oh no, this does not sound and look good... We should quickly check all the maschines!” &lt;/span&gt;]
@@ -894,7 +890,7 @@ Kev presses a button at the side of the door. It opens with a wooosh sound.
 
 </tw-passagedata><tw-passagedata pid="46" name="Check the stock freezer" tags="fermentor-room" position="1265,447" size="100,100">(set: $visited to true)
 (set: $currentpassage to (passage:)&#39;s name)
-(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 (live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
 
 |primero&gt;[&lt;span class=&quot;dialogue&quot;&gt;Shit. The freezer stopped working and all the stocks thawed. &lt;/span&gt;, says Kev
@@ -903,7 +899,7 @@ Kev presses a button at the side of the door. It opens with a wooosh sound.
 
 [[Go back -&gt;Enter the fermenter room]]</tw-passagedata><tw-passagedata pid="47" name="Walk to the fermenter" tags="fermentor-room" position="1391,320" size="100,100">(set: $visited to true)
 (set: $currentpassage to (passage:)&#39;s name)
-(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 (live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
 
 |primero&gt;[&lt;span class=&quot;dialogue&quot;&gt;Hm... the fermenter run out of broth. The culture already looks very dry.&lt;/span&gt;, says Kev
@@ -912,17 +908,18 @@ Kev presses a button at the side of the door. It opens with a wooosh sound.
 
 [[Go back -&gt;Enter the fermenter room]]</tw-passagedata><tw-passagedata pid="48" name="Go to the broth producing machine" tags="fermentor-room" position="1434,437" size="100,100">(set: $visited to true)
 (set: $currentpassage to (passage:)&#39;s name)
-(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 (live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
 
 |primero&gt;[&lt;span class=&quot;dialogue&quot;&gt;Ah. That&#39;s where the sound comes from.&lt;/span&gt;, says Kev
 
-&lt;span class=&quot;dialogue&quot;&gt; &quot;[Look]. The maschine controls malfunctioned and it seems like everything overheated. The ingredients in the maschine are all burned. I don&#39;t think we can use them to make a broth for the fermentation&quot;&lt;/span&gt;]
+&lt;span class=&quot;dialogue&quot;&gt; &quot;[Look]. The maschine controls malfunctioned and it seems like everything overheated. The ingredients in the maschine are all burned. I don&#39;t think we can use them to make a broth for the fermentation. Especially the burned malt extract looks really nasty.&quot;&lt;/span&gt;]
 
 (click: &quot;Look&quot;)[&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/broth-machine_small.jpg&quot;&gt;]
 
 [[Go back -&gt;Enter the fermenter room]]</tw-passagedata><tw-passagedata pid="49" name="Let&#39;s try our luck with what we have" tags="fermentor-room" position="1482,743" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
-(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
+(live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
 
 |primero&gt;[&lt;span class=&quot;dialogue&quot;&gt;&quot;Ok... what do we have available..&quot;&lt;/span&gt;, says Kev 
 
@@ -932,13 +929,13 @@ Kev presses a button at the side of the door. It opens with a wooosh sound.
 0. clear liquid smelling like alkohol
 0. old piece of bread from one of the drawers of the brew masters desk
 0. green powder from a small bag which you found in a corner of the room]
-(live: 14s)[(stop:)|next&gt;[Main ingredient
+(live: 8s)[(stop:)|next&gt;[Main ingredient
 (dropdown: 2bind $main_ingredient, &quot;burned malt extract&quot;,&quot;salt&quot;,&quot;brown liquid&quot;,&quot;clear liquid&quot;,&quot;piece of bread&quot;,&quot;green powder&quot;,&quot;water&quot;)
 
 Minor ingredient
 (dropdown: 2bind $minor_ingredient, &quot;burned malt extract&quot;,&quot;salt&quot;,&quot;brown liquid&quot;,&quot;clear liquid&quot;,&quot;piece of bread&quot;,&quot;green powder&quot;,&quot;water&quot;)]]
 
-(live: 15s)[(stop:)|reveal&gt;[Mix the ingredients]]
+(live: 9s)[(stop:)|reveal&gt;[Mix the ingredients]]
 
 (click-append: ?reveal)[&lt;br&gt; &lt;br&gt; You mix the $main_ingredient with the $minor_ingredient and hope for the best... It combines to a substance with a wierd consistance. Do you really want to [[put this into the fermenter]] or rather [[try again -&gt;Let&#39;s try our luck with what we have]]?] 
 </tw-passagedata><tw-passagedata pid="50" name="find the recipe" tags="message" position="1386,860" size="100,100"># Correct approach!
@@ -952,7 +949,8 @@ You earn +1 in knowledge:
 Take note of it! You will need it later.
 
 Let&#39;s [[search the workbench]] for the recipe.</tw-passagedata><tw-passagedata pid="51" name="search the workbench" tags="fermentor-room" position="1513,900" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
-(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
+(live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
 
 |primero&gt;[You search the workbench of the brewer and find a notebook and a small case with a numbers lock on it. Kev asks: &lt;span class=&quot;dialogue&quot;&gt;&quot;What should we to? Take a look at the [[notebook]] or at the [[small case]]?&quot;&lt;/span&gt;
 ]</tw-passagedata><tw-passagedata pid="52" name="notebook" tags="notebook" position="1609,629" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
@@ -968,13 +966,13 @@ Check the [[small case]]
 &lt;span class=&quot;dialogue&quot;&gt; &quot;He basically told me his life story... well, old white men, you know.&quot;. 
 &quot;Anyways..&quot; &lt;/span&gt;, Kev continues, &lt;span class=&quot;dialogue&quot;&gt; &quot;apparently he learned brewing at the oldest brewery in the world which is still producing beer. He took this photos on his last week on earth and kept them as a memory.
 ]]
-</tw-passagedata><tw-passagedata pid="53" name="small case" tags="fermentor-room" position="1636.3333333333333,796" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
-(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+</tw-passagedata><tw-passagedata pid="53" name="small case" tags="fermentor-room" position="1636,796" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 |primero&gt;[There is a sticky note on the case with the lock saying. &quot;Reminder to myself: What&#39;s the founding year of the place where you learned the art of brewing? Remember the number of the inoffical lecture hall we always visited last?&quot;
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;Huh, seems like Gilbert was a bit forgetful. Good for us he left some hints for the lock code! &quot;&lt;/span&gt;, says Kev &lt;span class=&quot;dialogue&quot;&gt;&quot;But I have no clue what the numbers are ... From my exchange semester in Germany I remember that &quot;lecture hall&quot; is &quot;Hörsaal&quot; in german. Don&#39;t ask me why... &quot;&lt;/span&gt;]
-(live: 20s)[(stop:)|next2&gt;[&#39;&#39;He looks at you.&#39;&#39;]]
+(live: 13s)[(stop:)|next2&gt;[&#39;&#39;He looks at you.&#39;&#39;]]
 
 (if:$code_entered)[
 &lt;span class=&quot;dialogue&quot;&gt;&quot;Hm. Maybe we should look in the [[notebook]] for some more hints&quot; &lt;/span&gt;, says Kev.
@@ -995,6 +993,7 @@ Check the [[small case]]
 (set: $door_photo to true)</tw-passagedata><tw-passagedata pid="55" name="Take a closer look at the Photo with the wheat beer glass" tags="notebook" position="1625,405" size="100,100">&lt;img src=&quot;https://raw.githubusercontent.com/ohwmakers/treasure-hunt/main/assets/beer.jpg&quot;&gt;
 [[Back-&gt;notebook]]
 (set: $wheat_photo to true)</tw-passagedata><tw-passagedata pid="56" name="enter the code" tags="fermentor-room" position="1759,770" size="100,100">(set: $code_entered to true)
+(live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
 
 (if:$lock_code is &quot;104013&quot;)[
 Yeah! The lock is unlocked! You can [[open the case]] now.
@@ -1004,14 +1003,16 @@ Nothing happens...
 Well, maybe [[try it again? -&gt;small case]]
 
 ]</tw-passagedata><tw-passagedata pid="57" name="open the case" tags="fermentor-room" position="1791,644" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
+(live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
 
 You open the small case and find a smart device which is commonly used to browse the internet. When you take it out of the box it lights up and you can see the last webpage which was visited and cached in the browser. Unfortunately the pictures are not loading.
 
 Take a look at &lt;a href=&quot;https://ohwmakers.github.io/treasure-hunt/assets/wikiHow-netuk.html#&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;the cached webpage&lt;/a&gt;
 
 [[show it to Kev]]</tw-passagedata><tw-passagedata pid="58" name="put this into the fermenter" tags="fermenter" position="1486,566" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
+(live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
 
 You add your mix of $main_ingredient with $minor_ingredient to the fermenter and wait...
 
@@ -1023,17 +1024,20 @@ Silence.
 &lt;span class=&quot;dialogue&quot;&gt; &quot;Well, we have one last try with the culture stocks. We should really look for something the brew master documented. We have to be sure that it works! Let&#39;s [[find the recipe]]&quot; &lt;/span&gt;
 ]]
 </tw-passagedata><tw-passagedata pid="59" name="show it to Kev" tags="fermentor-room" position="1891,772" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
+(live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;Oh wow! That&#39;s great! Unfortunately we can&#39;t use the first method with the malt extract but I guess the cook still has some potatoes in his storage room!&quot; &lt;/span&gt;, responds Kev &lt;span class=&quot;dialogue&quot;&gt; &quot;Seems like [[we found a way to recreate a broth]]!&quot; &lt;/span&gt;
 </tw-passagedata><tw-passagedata pid="60" name="go to the kitchen" tags="kitchen" position="2001,771" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 You can convice the cook to create a broth out of potatoes for you. You take a huge bottle of the potato broth and [[return to the fermenter room]]</tw-passagedata><tw-passagedata pid="61" name="return to the fermenter room" tags="fermentor-room" position="2029,652" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
+(live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
 
-When you are back in the fermenter room again kev says &lt;span class=&quot;dialogue&quot;&gt; &quot;Well, I guess it is better to make a netuk starter from the stocks in the thawing freezer. We don&#39;t know if the remains in the fermentor got already contaminated while we took so long to find a recipe.&quot; &lt;/span&gt;, he walks to one of the big fermentation bottles the brew master usually uses to test recipe varieties in a small batch.  &lt;span class=&quot;dialogue&quot;&gt; &quot;We can use this to [[make the starter]]!&quot; &lt;/span&gt;</tw-passagedata><tw-passagedata pid="62" name="make the starter" tags="fermentor-room" position="2115,778" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+When you are back in the fermenter room again kev says &lt;span class=&quot;dialogue&quot;&gt; &quot;Well, I guess it is better to make a netuk starter from the stocks in the thawing freezer. We don&#39;t know if the remains in the fermentor got already contaminated while we took so long to find a recipe.&quot; &lt;/span&gt;, he walks to one of the big fermentation bottles the brew master usually uses to test recipe varieties in a small batch.  
+&lt;span class=&quot;dialogue&quot;&gt; &quot;We can use this to [[make the starter]]!&quot; &lt;/span&gt;</tw-passagedata><tw-passagedata pid="62" name="make the starter" tags="fermentor-room" position="2115,778" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 Together with Kev&#39;s help you fill the potato broth into the huge bottle and add the content of one thawed stock vials.
 
@@ -1058,7 +1062,7 @@ Take note of it! You will need it later.
 
 Now let&#39;s [[go to the kitchen]]!</tw-passagedata><tw-passagedata pid="64" name="Hey, wait." tags="" position="1230,1031" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 
-(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 
 &lt;span class=&quot;dialogue&quot;&gt;&quot;According to the schematic we should have a tiny component here, but there is nothing in the radio&quot;&lt;/span&gt; you point out.
 
@@ -1086,18 +1090,33 @@ Take note of it! You will need it later.
 &lt;br&gt;
 [[try again! -&gt;make the starter]]]</tw-passagedata><tw-passagedata pid="66" name="fermentation" tags="fermentor-room" position="2202,938" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
 (if: (history:) does not contain $currentpassage)[(enchant: ?passage&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentor-room-broken.mp3&quot; autoplay loop&gt;]
+
 &lt;span class=&quot;dialogue&quot;&gt;&quot;Ok, now we have to find a place which roughly has $ferment_temp degree celsius. &lt;/span&gt;, says Kev &lt;
 
 span class=&quot;dialogue&quot;&gt; &quot;Hm.. the temperature in the tunnel should be quite right! Let&#39;s go there and [[set up the fermentation]] bottle.&quot; &lt;/span&gt;</tw-passagedata><tw-passagedata pid="67" name="set up the fermentation" tags="tunnel" position="2054,1053" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
-(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 50) + (t8n:&#39;instant&#39;))]
+(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
 (live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/tunnel.mp3&quot; autoplay loop&gt;]
 
 You follow Kev into the tunnel, set up the fermentation bottle together and wait...  
-(live: 10s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentation_bubble.mp3&quot; autoplay&gt;]
-(live: 14s)[(stop:)
+(live: 5s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/fermentation_bubble.mp3&quot; autoplay&gt;]
+(live: 8s)[(stop:)
 |primero&gt;[&lt;span class=&quot;dialogue&quot;&gt; &quot;Do you hear this??&quot; &lt;/span&gt;, asks Kev. &lt;span class=&quot;dialogue&quot;&gt; &quot;Sounds like we were successful!!!&quot; &lt;/span&gt;]]
 
-(live: 20s)[(stop:) You both cheer and high five eachother. After you listened to the bubbling of the netuk fermentation for a while you decide to [[go back to the camp -&gt;Run to camp]] ]</tw-passagedata><tw-passagedata pid="68" name="[Enter the fermenter room" tags="" position="1180,730" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+(live: 12s)[(stop:) You both cheer and high five eachother.
+
+After you listened to the bubbling of the netuk fermentation for a while you decide to [[go back to the camp -&gt;Run to camp]] ]</tw-passagedata><tw-passagedata pid="68" name="OPEN" tags="tunnel" position="1193.3333333333333,713.6666666666666" size="100,100">(set: $currentpassage to (passage:)&#39;s name)
+(if: (history:) does not contain $currentpassage)[(enchant: ?primero&#39;s chars, via (t8n-delay:pos * 30) + (t8n:&#39;instant&#39;))]
+(live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/tunnel.mp3&quot; autoplay loop&gt;]
+(live: 0s)[(stop:)&lt;audio src=&quot;https://github.com/ohwmakers/treasure-hunt/raw/main/assets/woosh.mp3&quot; autoplay&gt;]
+
+You press the button at the side of the door. It opens with a wooosh sound.
+
+|primero&gt;[
+
+(live: 2s)[(stop:)|next2&gt;[&lt;span class=&quot;dialogue&quot;&gt; ”Ahh, still works. Good old hydraulics. Not many electronics in there to be destroyed by a solar fair.” &lt;/span&gt;
+
+[[Enter the fermenter room]] ]]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
